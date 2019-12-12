@@ -8,7 +8,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(Bg.jpg);
+  background: linear-gradient(to top, rgba(30,87,153,0), rgba(188, 143, 143,0.4), rgba(	222, 184, 135,0.4),
+  rgba(255, 248, 220,0)), url(../img/Bg.jpg);
   background-position: right center;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -19,15 +20,15 @@
 }
 
 .header {
-  text-shadow: white 0.8em 0.7em 1.7em;
+  text-shadow: #FFFFFF 0.8em 0.7em 1.7em;
   cursor: pointer;
   line-height: 3em;
 }
 
 .title {
   font-weight: bold;
-  font-size: 2.5em;
-  color: #2F4F4F;
+  font-size: 2.8em;
+  color: #8B0000;
   letter-spacing: 0.25em;
 }
 
@@ -63,7 +64,7 @@
   text-align: center;
   cursor: pointer;
   border-radius: 50%;
-  border: 5px solid #D8E2DC;
+  border: 5px solid #FFDEAD;
   float: left;
   transition: all 0.5s ease;
 }
@@ -129,7 +130,6 @@
 
 .footer {
   margin-top: 3em;
-  background-color: #2F4F4F;
   align-self: stretch;
   transition: all 0.8s ease;
 }
@@ -138,30 +138,30 @@
   font-size: 1.3em;
   text-decoration: none;
   font-weight: bolder;
-  color: #DCDCDC;
+  color: #800000;
   transition: all 0.8s ease;
+  display: block;
 }
 
 .footer:hover {
-  color: black;
-  background-color: white;
+  color: #000000;
   transition: all 0.5s ease;
 }
 
 .footer:hover .download {
-  color: black;
+  color: #000000;
   text-shadow: 0 0 15px inherit;
   transition: all 0.8s ease;
 }
 
 /* media queries */
-@media screen and (max-width: 440px){
-  .main {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+@media screen and (max-width: 500px){
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
-  .fa-contact__google {
-    align-self: flex-end;
+  .download {
+    color: #FFDEAD;
   }
 }
