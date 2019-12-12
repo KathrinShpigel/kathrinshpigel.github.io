@@ -156,6 +156,14 @@
 
 /* media queries */
 @media screen and (max-width: 500px){
+  .header {
+    padding-top: 5.5em;
+  }
+  .sub-title {
+    padding-top: 0.8em;
+    line-height: 1.0em;
+    font-size: 1.2em;
+  }
   .contacts {
     display: flex;
     flex-direction: column;
@@ -163,5 +171,8 @@
   }
   .download {
     color: #FFDEAD;
+  }
+  .footer  {
+    padding-bottom: 3em;
   }
 }
