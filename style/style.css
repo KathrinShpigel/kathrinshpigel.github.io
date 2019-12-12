@@ -161,18 +161,25 @@
   }
   .sub-title {
     padding-top: 0.8em;
+    padding-bottom: 0.8em;
     line-height: 1.0em;
     font-size: 1.2em;
   }
   .contacts {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    height: 215px;
   }
   .download {
     color: #FFDEAD;
   }
   .footer  {
     padding-bottom: 3em;
+  }
+  .contact__google:first-child {
+    align-self: flex-end;
   }
 }
