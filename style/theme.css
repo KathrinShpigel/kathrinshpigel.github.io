@@ -371,28 +371,31 @@ hr {
 .social-icon {
   display: block;
   float:left;
-  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: solid 4px #405A74;
+  padding-top: 12px;
+  margin-right: 20px;
+  text-decoration: none;
 }
 
 .bg-footer .fa {
+    text-align: center;
     color: #405A74;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    border: solid 4px #405A74;
     font-size: 50px;
     text-align: center;
-    padding-top: 12px;
-    margin-right: 20px;
-    text-decoration: none;
     -webkit-transition: all .1s linear;
     -moz-transition: all .1s linear;
     -o-transition: all .1s linear;
     transition: all .1s linear;
 }
 
-.bg-footer .fa:hover {
+.social-icon:hover {
     background-color: #405A74;
+}
+
+.bg-footer .fa:hover {
     color: #22313F;
 }
 
