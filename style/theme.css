@@ -373,19 +373,16 @@ hr {
     border-top: 20px solid #405a74;
 }
 
-.social-icon {
-  display: block;
-  float:left;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: solid 4px #405A74;
-  padding-top: 12px;
-  margin-right: 20px;
-  text-decoration: none;
-}
+
 
 .bg-footer .fa {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 4px #405A74;
+    padding-top: 12px;
+    margin-right: 20px;
+    text-decoration: none;
     text-align: center;
     color: #405A74;
     font-size: 50px;
@@ -396,11 +393,8 @@ hr {
     transition: all .1s linear;
 }
 
-.social-icon:hover {
-    background-color: #405A74;
-}
-
 .bg-footer .fa:hover {
+    background-color: #405A74;
     color: #22313F;
 }
 
@@ -408,7 +402,6 @@ hr {
   padding-top: 1.2em;
   padding-right: 1.5em;
   display: block;
-  float: right;
 }
 
 .footer-phone a {
