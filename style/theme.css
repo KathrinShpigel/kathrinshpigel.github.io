@@ -368,10 +368,13 @@ hr {
     border-top: 20px solid #405a74;
 }
 
+.social-icon {
+  display: block;
+  float:left;
+  margin: 0 auto;
+}
+
 .bg-footer .fa {
-    display: block;
-    float:left;
-    margin: 0 auto;
     color: #405A74;
     border-radius: 50%;
     width: 80px;
