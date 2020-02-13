@@ -308,6 +308,12 @@ hr {
     margin-top: 14px;
 }
 
+.skills-block {
+  border-radius: 30px;
+  background-color: #F2F2F2;
+  padding: 20px;
+}
+
 
 /* CONTACT
    ================================================== */
