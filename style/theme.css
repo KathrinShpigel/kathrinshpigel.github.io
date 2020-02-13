@@ -310,7 +310,7 @@ hr {
 
 .skills-block {
   border-radius: 30px;
-  background-color: #F2F2F2;
+  background-color: rgba(242, 242, 242, .75);;
   padding: 20px;
 }
 
