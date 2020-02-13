@@ -369,6 +369,9 @@ hr {
 }
 
 .bg-footer .fa {
+    display: block;
+    float:left;
+    margin: 0 auto;
     color: #405A74;
     border-radius: 50%;
     width: 80px;
@@ -393,6 +396,8 @@ hr {
 .footer-phone {
   padding-top: 1.2em;
   padding-right: 1.5em;
+  display: block;
+  float: right;
 }
 
 .footer-phone a {
