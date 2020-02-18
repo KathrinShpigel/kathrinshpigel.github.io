@@ -1,0 +1,93 @@
+/*
+#teamWork
+*/
+
+.teamWork {
+  color: #262626;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(14, 1fr);
+	grid-template-rows: 130px 60px 1fr 150px;
+	background-color: #fff;
+}
+
+.teamWork-title {
+  grid-column: 1/span 14;
+	grid-row: 1/span 1;
+	justify-self: center;
+	align-self: flex-end;
+	cursor: default;
+}
+
+.teamWork-subtitle {
+  grid-column: 1/span 14;
+	grid-row: 2/span 1;
+	justify-self: center;
+	align-self: flex-end;
+	cursor: default;
+	padding-bottom: 40px;
+}
+
+.teamWork-cards {
+  grid-column: 1/span 14;
+	grid-row: 3/span 1;
+	justify-self: center;
+	align-self: flex-end;
+	cursor: default;
+	padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+  grid-gap: 30px;
+  list-style: none;
+}
+
+.teamWork-card {
+}
+
+.teamWork-card__photo:hover {
+  display: block;
+  transition: 1s;
+  background-color: rgba(38, 38, 38, 0.70);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.teamWork-card__name {
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.teamWork-card__profession {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.teamWork-card_social {
+  display: none;
+}
+
+.fab-teamWork-card__social-item  {
+  margin: 0;
+  display: none;
+}
+
+.teamWork-card:hover .teamWork-card_social {
+  display: block;
+}
+
+.teamWork-card:hover .fab-teamWork-card__social-item {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.teamWork-card__social-item {
+
+}

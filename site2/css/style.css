@@ -1,0 +1,10 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.body {
+	max-width: 1400px;
+	color: #505050;
+	font-size: 16px;
+}

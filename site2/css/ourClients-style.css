@@ -1,0 +1,154 @@
+/*
+#ourClients
+*/
+.ourClients {
+  margin-top: 100px;
+  padding-top: 100px;
+  color: #e7e7e7;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(14, 1fr);
+	grid-template-rows: 130px 60px 100px 1fr 220px, 20px;
+	background: linear-gradient(to top, rgba(23,23,23,0.9), rgba(23,23,23,0.9)),
+              url(../img/ourClients-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ourClients-title {
+  grid-column: 1/span 14;
+	grid-row: 1/span 1;
+	justify-self: center;
+	align-self: flex-end;
+	cursor: default;
+}
+
+.ourClients-subtitle {
+  grid-column: 1/span 14;
+	grid-row: 2/span 1;
+	justify-self: center;
+	align-self: flex-end;
+	cursor: default;
+	padding-bottom: 40px;
+}
+
+.ourClients-review {
+  grid-column: 1/span 7;
+	grid-row: 3/span 1;
+	justify-self: center;
+	align-self: flex-end;
+	cursor: default;
+  font-weight: bold;
+}
+
+.ourClients-card {
+  grid-column: 1/span 7;
+	grid-row: 4/span 1;
+	justify-self: center;
+	align-self: flex-end;
+	cursor: default;
+}
+
+.ourClients-card__description {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.ourClients-card__photo {
+  display: block;
+  margin: 5% auto 2% auto;
+}
+
+.ourClients-card__client {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 3%;
+  color: #ff0036;
+}
+
+.ourClients-list__btn {
+  margin-bottom: 1%;
+  grid-column: 1/span 7;
+	grid-row: 5/span 1;
+	justify-self: center;
+	align-self: flex-end;
+	cursor: default;
+  list-style: none;
+}
+
+.ourClients-list__btn-item {
+  display: inline-block;
+}
+
+.ourClients__btn {
+  width: 20px;
+  height: 20px;
+}
+
+.ourClients_prev {
+
+}
+
+.ourClients_this {
+
+}
+
+.ourClients_next {
+
+}
+
+.ourClients-company {
+  grid-column: 8/span 6;
+	grid-row: 2/span 3;
+	justify-self: center;
+	align-self: flex-end;
+	cursor: default;
+  display: grid;
+  grid-gap: 30px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+}
+
+.ourClients-company__item {
+  justify-self: center;
+	align-self: flex-end;
+	cursor: default;
+}
+
+/* OurClients scroll-bar*/
+
+.ourClients-scroll-bar {
+  grid-column: 1/span 14;
+	position: relative;
+}
+
+.ourClients-scroll-bar::before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	right: 50%;
+	display: block;
+	width: 16%;
+	height: 2px;
+	background: #ff0036;
+	z-index: -1;
+}
+.ourClients-scroll-bar::after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	display: block;
+	width: 16%;
+	height: 2px;
+	background: #ff0036;
+	z-index: -1;
+}
+
+.ourClients-point {
+  position: absolute;
+	display: block;
+  top: -10px;
+  left: 50%;
+}

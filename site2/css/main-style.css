@@ -1,0 +1,269 @@
+/*
+#About us
+#Our Skills
+*/
+
+
+/* About us */
+.about {
+	color: #262626;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(14, 1fr);
+	grid-template-rows: 130px 60px 100px 1fr 20px 410px;
+	background-image: url(../img/about-right.png);
+	background-repeat: no-repeat;
+	background-position: 90% 30%;
+}
+
+.about-title {
+	grid-column: 1/span 14;
+	grid-row: 1/span 1;
+	justify-self: center;
+	align-self: flex-end;
+	cursor: default;
+}
+.about-subtitle {
+	grid-column: 1/span 14;
+	grid-row: 2/span 1;
+	justify-self: center;
+	align-self: flex-end;
+	cursor: default;
+	padding-bottom: 40px;
+}
+.about-description {
+	grid-column: 2/span 6;
+	grid-row: 3/span 1;
+	cursor: default;
+	align-self: center;
+}
+.about-toggles {
+	grid-column: 2/span 6;
+	grid-row: 4/span 1;
+	align-self: center;
+	margin-bottom: 20%;
+}
+/*выпадающие блоки*/
+.about-taggles__block {
+	border-top: 1px solid #e7e7e7;
+	position: relative;
+	width: 100%;
+	color: #262626;
+	overflow: hidden;
+	margin-bottom: 0.5rem;
+}
+.about-taggles__input {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+.about-taggles__label {
+	position: relative;
+	display: block;
+	padding: 0 0 0 1em;
+	background: #16a085;
+	font-weight: bold;
+	line-height: 3;
+	cursor: pointer;
+	background: #f7f7f7;
+	padding-left: 90px;
+}
+.about-toggles__description {
+	max-height: 0;
+	overflow: hidden;
+	/*background: #1abc9c;*/
+	-webkit-transition: max-height .3s;
+	-o-transition: max-height .3s;
+	transition: max-height .3s;
+	-webkit-transition: margin .3s;
+	-o-transition: margin .3s;
+	transition: margin .3s;
+	/*background: #3498db;*/
+	margin: 5px 1em;
+}
+
+.about-taggles__input:hover ~ .about-taggles__label {
+	color: #ff0036;
+}
+
+.about-taggles__input:checked ~ .about-taggles__label{
+	color: #ff0036;
+}
+
+.about-taggles__input:checked ~ .about-toggles__description {
+	margin: 1em;
+	max-height: 100vh;
+}
+/*иконки выпадающих блоков*/
+.about-taggles__label::before {
+	position: absolute;
+	left: 0;
+	top: 3px;
+	display: block;
+	width: 60px;
+	height: 3em;
+	line-height: 3;
+	text-align: center;
+	-webkit-transition: all .35s;
+	-o-transition: all .35s;
+	transition: all .35s;
+}
+
+.about-taggles__input + .about-taggles__label::before {
+	content: url(../img/about-icon-open.png);
+}
+
+/*сделать изменение на это изображение при нажатии*/
+.about-taggles__input + .about-taggles__label:checked::before {
+	content: url(../img/about-icon-close.png);
+}
+
+/*input[type=checkbox]:checked + .about-taggles__label::before {
+  transform: rotate(315deg);
+}
+.tab input[type=radio]:checked + .about-taggles__label::before {
+  transform: rotateX(180deg);
+}*/
+/*черточка после знака раскрытия блока*/
+
+.about-taggles__label:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 60px;
+	display: block;
+	width: 1px;
+	height: 100%;
+	background: #e7e7e7;
+}
+
+/*end щфщрмление выпадающих блоков*/
+
+@keyframes stretching {
+  0% {
+    width: 360px;
+    height: 320px;
+  }
+  100% {
+    width: 410px;
+    height: 360px;
+    z-index: 10;
+  }
+}
+
+/* Page line */
+.about-scroll-bar {
+	grid-column: 1/span 14;
+	grid-row: 5/span 1;
+	position: relative;
+}
+
+.about-scroll-bar::before {
+	content: '';
+	position: absolute;
+	top: 9px;
+	right: 50%;
+	display: block;
+	height: 5px;
+	width: 16%;
+	height: 2px;
+	background: #262626;
+	z-index: -1;
+}
+.about-scroll-bar::after {
+	content: '';
+	position: absolute;
+	top: 9px;
+	left: 50%;
+	display: block;
+	height: 5px;
+	width: 16%;
+	height: 2px;
+	background: #262626;
+	z-index: -1;
+}
+
+.point {
+	display: block;
+	margin: 0 auto;
+}
+
+/* Our Skills */
+
+.about-skills {
+	grid-column: 1/span 14;
+	grid-row: 6/span 1;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(14, 1fr);
+	grid-template-rows: 1fr;
+}
+
+.about-skill {
+	padding: 20% 0;
+	grid-row: 1/span 1;
+	text-align: center;
+	padding-bottom: 10%;
+}
+.flat-design {
+	grid-column: 2/span 3;
+}
+
+.retiny-ready {
+	grid-column: 5/span 3;
+}
+
+.reasponsive {
+	grid-column: 8/span 3;
+}
+
+.clean-useful {
+	grid-column: 11/span 3;
+}
+
+.about-skills__icon {
+	display: block;
+	background-image: url(../img/hexagon.svg);
+	background-position: top;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	transition: 1s;
+	padding-bottom: 45%;
+}
+
+.about-skills__icon:hover {
+	background-image: url(../img/hexagonHover.svg);
+	background-position: top;
+	width: 100px;
+	height: 100px;
+	transition: 1s;
+}
+
+.fab, .fas {
+	margin-top: 34%;
+	font-size: 2em;
+	color: #262626;
+	transition: 1s;
+}
+
+.about-skill:hover .fab, .about-skill:hover .fas {
+	color: #ff0036;
+	transition: 1.5s;
+}
+
+.about-skills__icon:hover .fab, .about-skills__icon:hover .fas {
+	color: #ffffff;
+	transition: 1.5s;
+}
+
+.about-skills__title {
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 10%;
+}
+
+.about-skills__description {
+	text-align: center;
+}
