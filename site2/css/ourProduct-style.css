@@ -119,3 +119,110 @@
   outline: none;
   transition: 1s;
 }
+
+/* Responsive */
+
+@media (max-width:1260px) {
+  .ourProduct {
+    color: #262626;
+  	display: grid;
+  	grid-gap: 30px;
+  	grid-template-columns: repeat(14, 1fr);
+  	grid-template-rows: 130px 60px 1fr 150px;
+  	background-image: url(../img/ourProduct.png);
+  	background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 30% 45%;
+  }
+  .ourProduct-items {
+    grid-column: 2/span 12;
+  	grid-row: 3/span 1;
+    display: grid;
+  	grid-gap: 20px;
+  	grid-template-columns: repeat(2, 1fr);
+  	grid-template-rows: repeat(3, 60px);
+    grid-template-areas: "item__1 item__4"
+                         "item__2 item__5"
+                         "item__3 item__6";
+    padding-top: 50px;
+    padding-bottom: 35%;
+  }
+}
+
+@media (max-width:885px) {
+  .ourProduct {
+    background-size: 30% 40%;
+  }
+  .ourProduct-items {
+    padding-bottom: 40%;
+  }
+}
+
+@media (max-width:790px) {
+  .ourProduct__btn {
+    grid-column: 6/span 4;
+  	grid-row: 4/span 1;
+    margin: 40px 12px 60px;
+    text-transform: uppercase;
+    background-color: rgba(247, 247, 247, 0.2);
+    border: none;
+    color: #fff;
+    transition: 1s;
+  }
+}
+
+@media (max-width:720px) {
+  .ourProduct-items {
+  	grid-gap: 15px;
+  	grid-template-columns: repeat(1, 1fr);
+  	grid-template-rows: repeat(6, 60px);
+    grid-template-areas: "item__1"
+                         "item__2"
+                         "item__3"
+                         "item__4"
+                         "item__5"
+                         "item__6";
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .ourProduct-item__left {
+    text-align: left;
+    padding-left: 120px;
+    background-position: 10% center;
+  }
+  .ourProduct {
+    background-size: 30% 30%;
+  }
+  .ourProduct-items {
+    padding-bottom: 35%;
+  }
+}
+
+
+@media (max-width:600px) {
+  .ourProduct {
+    background-size: 50% 40%;
+  }
+  .ourProduct-items {
+    padding-bottom: 75%;
+  }
+}
+
+@media (max-width:480px) {
+  .ourProduct {
+  	grid-template-rows: 130px 100px 1fr 150px;
+  }
+  .ourProduct-title {
+  	align-self: center;
+  }
+  .ourProduct-subtitle {
+  	align-self: flex-start;
+    grid-column: 2/span 12;
+  }
+  .ourProduct {
+    background-size: 50% 30%;
+  }
+  .ourProduct-items {
+    padding-bottom: 75%;
+  }
+}

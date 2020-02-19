@@ -180,3 +180,21 @@
   top: -10px;
   left: 50%;
 }
+
+/* Responsive */
+
+@media (max-width:885px) {
+  .portfolio-items {
+  	grid-template-columns: repeat(7, 1fr);
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width:480px) {
+  .portfolio {
+  	grid-template-rows: 130px 60px 1fr;
+  }
+  .portfolio-groups {
+    white-space: wrap;
+  }
+}

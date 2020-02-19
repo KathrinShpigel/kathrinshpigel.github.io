@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/header-style.css">
@@ -15,6 +16,7 @@
 <body>
 	<header class="header">
 <!-- Header - menu -->
+<!-- menu -->
 		<div class="header-logo">
 			<a href="#"><img src="img/logo.png" alt="Creativia"></a>
 		</div>
@@ -22,12 +24,31 @@
 			<a href="#" class="header-nav__link">Home</a>
 			<a href="#About-us" class="header-nav__link">About us</a>
 			<a href="#Portfolio" class="header-nav__link">Portfolio</a>
-			<a href="#" class="header-nav__link">Clients</a>
-			<a href="#" class="header-nav__link">Team</a>
+			<a href="#Clients" class="header-nav__link">Clients</a>
+			<a href="#Team" class="header-nav__link">Team</a>
 			<a href="#" class="header-nav__link">Services</a>
 			<a href="#" class="header-nav__link">Blog</a>
 			<a href="#" class="header-nav__link">Contact</a>
 		</nav>
+<!-- Burger menu -->
+
+			<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+			<label class="btn-menu" for="hmt">
+				<span class="first"></span>
+				<span class="second"></span>
+				<span class="third"></span>
+			</label>
+			<ul class="hidden-menu">
+				<li><a href="#" class="hidden-menu__link">Home</a></li>
+				<li><a href="#About-us" class="hidden-menu__link">About us</a></li>
+				<li><a href="#Portfolio" class="hidden-menu__link">Portfolio</a></li>
+				<li><a href="#Clients" class="hidden-menu__link">Clients</a></li>
+				<li><a href="#Team" class="hidden-menu__link">Team</a></li>
+				<li><a href="#" class="hidden-menu__link">Services</a></li>
+				<li><a href="#" class="hidden-menu__link">Blog</a></li>
+				<li><a href="#" class="hidden-menu__link">Contact</a></li>
+			</ul>
+
 <!-- Header - content -->
 		<div class="header-text">
 			<h1 class="header-title">why <span class="text-style-color">creativia?</span></h1>
@@ -126,7 +147,7 @@
 			</div>
 		</div>
 <!-- Page line -->
-		<div class="portfolio-scroll-bar"><img class="portfolio-point" src="svg/objectRed.svg" width="20px" height="20px"></div>
+		<div class="portfolio-scroll-bar"><img class="portfolio-point" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNFMjFCMUI7IiBwb2ludHM9IjI1LjA0NSwxMjggMjU2LDAgNDg2Ljk1NSwxMjggNDg2Ljk1NSwzODQgMjU2LDUxMiAyNS4wNDUsMzg0ICIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" width="20px" height="20px"></div>
 	</section>
 <!-- Our Product -->
 	<section class="ourProduct">
@@ -143,7 +164,7 @@
 		<button type="button" class="ourProduct__btn">Free psd</button>
 	</section>
 <!-- Our clients -->
-	<section class="ourClients">
+	<section class="ourClients" id="Clients">
 		<h2 class="ourClients-title">our <span class="text-style-color">clients</span></h2>
 		<p class="ourClients-subtitle">Lorem ipsum dolor sit amet, consectetur <span class="text-style-color">adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.</p>
 		<h3 class="ourClients-review">HAPPY CLIENTS SAY</h3>
@@ -167,7 +188,7 @@
 		<div class="ourClients-scroll-bar"><img class="ourClients-point" src="svg/objectRed.svg" width="20px" height="20px"></div>
 	</section>
 <!-- TeamWork -->
-	<section class="teamWork">
+	<section class="teamWork" id="Team">
 		<h2 class="teamWork-title">our <span class="text-style-color">teamwork</span></h2>
 		<p class="teamWork-subtitle">Lorem ipsum dolor sit amet, consectetur <span class="text-style-color">adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.</p>
 		<ul class="teamWork-cards">

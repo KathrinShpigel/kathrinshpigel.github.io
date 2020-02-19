@@ -195,30 +195,25 @@
 	grid-row: 6/span 1;
 	display: grid;
 	grid-gap: 30px;
-	grid-template-columns: repeat(14, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 1fr;
 }
 
 .about-skill {
 	padding: 20% 0;
-	grid-row: 1/span 1;
 	text-align: center;
 	padding-bottom: 10%;
 }
 .flat-design {
-	grid-column: 2/span 3;
 }
 
 .retiny-ready {
-	grid-column: 5/span 3;
 }
 
 .reasponsive {
-	grid-column: 8/span 3;
 }
 
 .clean-useful {
-	grid-column: 11/span 3;
 }
 
 .about-skills__icon {
@@ -266,4 +261,93 @@
 
 .about-skills__description {
 	text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width:1260px) {
+	.about {
+		grid-template-rows: 130px 60px 100px 1fr 20px 410px;
+		background-image: url(../img/about-right.png);
+		background-repeat: no-repeat;
+		background-position: 50% 55%;
+	}
+	.about-description {
+		grid-column: 2/span 11;
+	}
+	.about-toggles {
+		grid-column: 5/span 6;
+		margin-bottom: 85%;
+	}
+}
+
+@media (max-width:1000px) {
+	.about {
+		background-position: 50% 62%;
+		grid-template-rows: 130px 60px 100px 1fr 20px 300px;
+		margin-bottom: 300px;
+	}
+	.about-toggles {
+		margin-bottom: 100%;
+	}
+	.about-skills {
+		grid-column: 1/span 14;
+		grid-row: 6/span 1;
+		display: grid;
+		grid-gap: 30px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 240px;
+		padding-bottom: 5px;
+	}
+	.about-skills__icon {
+		padding-bottom: 25%;
+	}
+	.fab, .fas {
+		margin-top: 34%;
+	}
+	.about-skills__title {
+		padding-bottom: 5px;
+	}
+}
+
+@media (max-width:790px) {
+	.about {
+		background-position: 50% 62%;
+		grid-template-rows: 130px 60px 100px 1fr 20px 1000px;
+		margin-bottom: 5px;
+		background-image: none;
+	}
+	.about-toggles {
+		margin-bottom: 5%;
+		margin-top: 5%;
+	}
+	.about-skill {
+		padding: 0 0;
+		text-align: center;
+		padding-bottom: 0;
+	}
+	.about-skills {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: 200px;
+	}
+	.about-skills__icon {
+		padding-bottom: 15%;
+	}
+}
+
+@media (max-width:620px) {
+	.about {
+		grid-template-rows: 130px 100px 130px 1fr 20px 1000px;
+	}
+	.about-toggles {
+		grid-column: 3/span 10;
+		margin-top: 20%;
+	}
+	.about-subtitle {
+		grid-column: 2/span 12;
+		align-self: flex-start;
+	}
+	.about-description {
+		align-self: flex-start;
+	}
 }

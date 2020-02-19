@@ -85,3 +85,37 @@
 .teamWork-card__social-item {
 
 }
+
+/* Responsive */
+
+@media (max-width:1260px) {
+  .teamWork-cards {
+    grid-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+  	grid-template-rows: 1fr;
+  }
+}
+
+@media (max-width:600px) {
+  .teamWork-cards {
+    grid-gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
+  	grid-template-rows: 1fr;
+  }
+}
+
+@media (max-width:480px) {
+  .teamWork {
+  	grid-template-rows: 130px 100px 1fr 150px;
+  }
+
+  .teamWork-title {
+    grid-column: 1/span 14;
+  	align-self: center;
+  }
+
+  .teamWork-subtitle {
+    grid-column: 2/span 12;
+  	align-self: flex-start;
+  }
+}
