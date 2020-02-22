@@ -1,0 +1,83 @@
+/*
+#Skills
+*/
+
+.skills {
+	color: #262626;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(14, 1fr);
+	grid-template-rows: 130px 60px 300px;
+}
+
+.skills-title {
+	grid-column: 1/span 14;
+	grid-row: 1/span 1;
+	justify-self: center;
+	align-self: flex-end;
+	cursor: default;
+}
+.skills-subtitle {
+	grid-column: 2/span 12;
+	grid-row: 2/span 1;
+	justify-self: center;
+	align-self: center;
+	cursor: default;
+}
+
+.skills-items {
+	grid-column: 2/span 12;
+	grid-row: 3/span 1;
+  justify-self: center;
+	align-self: center;
+	cursor: default;
+	display: grid;
+	grid-gap: 30px;
+  width: 100%;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+  margin-bottom: 40px;
+}
+
+.skill-item {
+  grid-column-end: span 1;
+  grid-auto-flow: row dense;
+	padding: 20% 0;
+	text-align: center;
+	padding-bottom: 10%;
+}
+
+.skills__bg {
+	display: block;
+  background-color: #f7f7f7;
+  border: 3px solid #ff0036;
+  border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	transition: 1s;
+	padding-bottom: 45%;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 45px;
+  padding-bottom: 0;
+  font-size: 2.7em;
+  font-weight: bolder;
+}
+
+.red_style {
+  color: #ff0036;
+}
+
+.skills__title {
+  padding-top: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.skills__description {
+	text-align: center;
+}

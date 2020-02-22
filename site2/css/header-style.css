@@ -201,7 +201,7 @@
 .btn-menu {
   color: #ff0036;
   background-color: #262626;
-  padding: 5px;
+  padding: 0;
   position: fixed;
   top: 0px;
   left: 5px;
