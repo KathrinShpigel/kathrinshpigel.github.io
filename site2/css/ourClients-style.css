@@ -24,7 +24,7 @@
 }
 
 .ourClients-subtitle {
-  grid-column: 1/span 14;
+  grid-column: 2/span 12;
 	grid-row: 2/span 1;
 	justify-self: center;
 	align-self: flex-end;

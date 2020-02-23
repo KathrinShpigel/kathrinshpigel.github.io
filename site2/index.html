@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/teamWork-style.css">
 	<link rel="stylesheet" type="text/css" href="css/skills-style.css">
 	<link rel="stylesheet" type="text/css" href="css/services-style.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<title>Second Project - "Creativia"</title>
 </head>
 <body>
@@ -30,7 +31,7 @@
 			<a href="#Team" class="header-nav__link">Team</a>
 			<a href="#Services" class="header-nav__link">Services</a>
 			<a href="#" class="header-nav__link">Blog</a>
-			<a href="#" class="header-nav__link">Contact</a>
+			<a href="#Contact" class="header-nav__link">Contact</a>
 		</nav>
 <!-- Burger menu -->
 
@@ -48,7 +49,7 @@
 				<li><a href="#Team" class="hidden-menu__link">Team</a></li>
 				<li><a href="#Services" class="hidden-menu__link">Services</a></li>
 				<li><a href="#" class="hidden-menu__link">Blog</a></li>
-				<li><a href="#" class="hidden-menu__link">Contact</a></li>
+				<li><a href="#Contact" class="hidden-menu__link">Contact</a></li>
 			</ul>
 
 <!-- Header - content -->
@@ -311,13 +312,16 @@
 					 																 faucibus nisl sit amet nulla sollicitudin.</div>
 			</div>
 		</div>
+<!-- Page line -->
+		<div class="services-scroll-bar"><img class="services-point" src="svg/objectRed.svg" width="20px" height="20px"></div>
 	</section>
-
-
-
-
-
-
+<!-- Footer -->
+	<footer class="footer" id="Contact">
+		<h2 class="footer-title">fine us <span class="text-style-color">Here</span></h2>
+		<p class="footer-subtitle">Lorem ipsum dolor sit amet, consectetur <span class="text-style-color">adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.</p>
+		<div class="footer-map" id="map"></div>
+		<div class="footer-description">Creativia</div>
+	</footer>
 <!--
 	<section class="prices">
 		//часть 9
@@ -334,10 +338,9 @@
 	<section class="contactUs">
 		//часть 13
 	</section>
-	<footer class="footer">
-		//часть 14
-	</footer>
 -->
 	<script src="js/btn-portfolio-group.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+	<script src="js/footer-map.js"></script>
 </body>
 </html>

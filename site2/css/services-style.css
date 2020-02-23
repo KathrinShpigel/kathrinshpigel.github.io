@@ -8,7 +8,7 @@
 	display: grid;
 	grid-gap: 30px;
 	grid-template-columns: repeat(14, 1fr);
-	grid-template-rows: 130px 60px 1fr;
+	grid-template-rows: 130px 60px 1fr 20px;
 	background-color: rgba(23,23,23,1);
 }
 
@@ -39,6 +39,7 @@
   grid-gap: 30px;
   grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr;
+  margin-bottom: 40px;
 }
 
 .services-item {
@@ -95,11 +96,50 @@
   transition: 1s;
 }
 
+/* OurClients scroll-bar*/
+
+.services-scroll-bar {
+  grid-column: 1/span 14;
+  grid-row: 4/span 1;
+  align-self: flex-end;
+	position: relative;
+}
+
+.services-scroll-bar::before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	right: 50%;
+	display: block;
+	width: 16%;
+	height: 2px;
+	background: #ff0036;
+	z-index: 1;
+}
+.services-scroll-bar::after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	display: block;
+	width: 16%;
+	height: 2px;
+	background: #ff0036;
+	z-index: 1;
+}
+
+.services-point {
+  position: absolute;
+	display: block;
+  top: -10px;
+  left: 50%;
+}
+
 /* Responsive */
 
 @media (max-width:800px) {
   .services {
-  	grid-template-rows: 130px 100px 1fr;
+  	grid-template-rows: 130px 100px 1fr 20px;
   }
   .services-items {
     grid-column: 1/span 14;
