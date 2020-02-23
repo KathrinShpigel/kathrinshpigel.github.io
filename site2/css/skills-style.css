@@ -50,7 +50,7 @@
 .skills__bg {
 	display: block;
   background-color: #f7f7f7;
-  border: 3px solid #ff0036;
+  border: 3px solid #f7f7f7;
   border-radius: 50%;
 	width: 150px;
 	height: 150px;
@@ -74,7 +74,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	padding-bottom: 15px;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
