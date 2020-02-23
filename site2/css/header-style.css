@@ -47,6 +47,7 @@
 	vertical-align: middle;
 	opacity: 0.5;
 	cursor: pointer;
+	outline: none;
 }
 
 .header-nav__link:hover {
