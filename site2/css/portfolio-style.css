@@ -64,6 +64,9 @@
 
 .portfolio-item {
   height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .portfolio-item__1 {

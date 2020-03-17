@@ -137,7 +137,7 @@
 	background: #e7e7e7;
 }
 
-/*end щфщрмление выпадающих блоков*/
+/*end оформление выпадающих блоков*/
 
 @keyframes stretching {
   0% {
@@ -264,6 +264,34 @@
 }
 
 /* Responsive */
+
+@media (min-width:2300px) {
+	.about {
+		grid-template-rows: 130px 60px 100px 1fr 20px 510px;
+	}
+	.about-skills__title {
+	padding-bottom: 20px;
+	}
+}
+
+
+@media (min-width:1800px) {
+	.about {
+		grid-template-rows: 130px 60px 100px 1fr 20px 410px;
+	}
+	.about-skills__title {
+	padding-bottom: 20px;
+	}
+	.about-skills__icon {
+	padding-bottom: 150px;
+	}
+}
+
+@media (min-width:1360px) {
+	.about-skills__icon {
+	padding-bottom: 130px;
+	}
+}
 
 @media (max-width:1260px) {
 	.about {
