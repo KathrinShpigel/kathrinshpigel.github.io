@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Raleway', sans-serif;
 	font-style: regular 400;
@@ -524,6 +528,55 @@ body {
 }
 
 /*/footer*/
+
+/* Button up */
+
+.button-scroll-page-up {
+  display: inline-block;
+  background-color: rgba(40, 167, 69, 0.6);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 10%;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s;
+  z-index: 1000;
+  text-decoration: none;
+}
+.button-scroll-page-up:hover {
+  cursor: pointer;
+  background-color: rgba(40, 167, 69, 1);
+  text-decoration: none;
+}
+.button-scroll-page-up:active {
+  background-color: rgba(40, 167, 69, 0.6);
+  text-decoration: none;
+}
+
+.button-scroll-page-up::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 45px;
+  color: #fff;
+}
+
+.button-scroll-page-up {
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.button-scroll-page-up.show {
+  opacity: 1;
+  visibility: visible;
+}
 
 /* брейкпоинты */
 /* Малые девайсы («ландшафтные телефоны», >= 576px)*/

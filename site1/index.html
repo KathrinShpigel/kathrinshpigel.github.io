@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=1250зч">
-	<title>Project 1</title>
+	<meta name="viewport" content="width=1250px">
+	<title>Project 1: Dart service manager</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap" rel="stylesheet">
+	<link href="fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
+	<script src="jQuery 3.4.1.js"></script>
 </head>
 <body>
 	<header class="header" id="Home">
@@ -18,7 +21,7 @@
 			  </a>
 
 				 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				    <ul class="navbar-nav mr-auto">
+				    <ul id="menu-scroll" class="navbar-nav mr-auto">
 				    	<li class="nav-item active">
 				        	<a class="nav-link" href="#Home">Home<span class="sr-only">(current)</span></a>
 				    	</li>
@@ -34,6 +37,7 @@
 				    	<li class="nav-item">
 				        	<a class="nav-link" href="#Help">Help</a>
 				    	</li>
+				    </ul>
 				 </div>
 				<button type="button" class="btn btn-outline-light btn-header">sign up</button>
 			</nav>
@@ -51,7 +55,7 @@
 						   <source src="video/video_for_DSM_site1.mp4" type="video/mp4">
 						   <source src="video/video_for_DSM_site1.webm" type="video/webm">
 						   <source src="video/video_for_dsm_site1.ogg" type="video/ogg">
-						   <object data="video/.swf" type="application/x-shockwave-flash"><!-- добавляем видеоконтент для устаревших браузеров, в которых нет поддержки элемента video -->
+						   <object data="video/video_for_DSM_site1.swf" type="application/x-shockwave-flash"><!-- добавляем видеоконтент для устаревших браузеров, в которых нет поддержки элемента video -->
 								<param name="movie" value="video.swf">
 							</object>
 						   Video не поддерживается вашим браузером.
@@ -356,7 +360,9 @@
 			</div>
 		</div>
 	</footer>
+	<a id="to-top" class="button-scroll-page-up" href="#menu-scroll"></a>
 	<script src="js/btn-up-down.js"></script>
+	<script src="js/button-up.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
