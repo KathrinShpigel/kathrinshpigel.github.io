@@ -47,12 +47,15 @@
 			    </div>
 			    <div class="-col-lg-6">
 			    	<div class="text-right">
-				    	<video width="600" height="320" controls="controls" poster="img/video.png" class="raund">
-						   <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
-						   <source src="img/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						   <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
+				    	<video width="600" height="340"  poster="img/video.png" class="raund" autoplay loop>
+						   <source src="video/video_for_DSM_site1.mp4" type="video/mp4">
+						   <source src="video/video_for_DSM_site1.webm" type="video/webm">
+						   <source src="video/video_for_dsm_site1.ogg" type="video/ogg">
+						   <object data="video/.swf" type="application/x-shockwave-flash"><!-- добавляем видеоконтент для устаревших браузеров, в которых нет поддержки элемента video -->
+								<param name="movie" value="video.swf">
+							</object>
 						   Video не поддерживается вашим браузером.
-						   <a href="video/duel.mp4">Скачайте видео</a>.
+						   <a href="video/video_for_DSM_site1.mov">Скачайте видео</a>.
 						</video>
 					</div>
 			   </div>
@@ -184,40 +187,50 @@
     		</div>
 
     		<div class="col">
-    			<button type="button" id="btn-up" class="btn btn-lg btn-block testimonials-btn-up testimonials-btn-message">&and;</button>
-    			<ul class="list-unstyled testimonials-list">
-					 	<li class="media media-invisible">
-					    <img class="align-self-center mr-3" src="img/testimonials_avatar.png" alt="Generic placeholder image">
-					    <div class="media-body testimonials-list-massage">
-					      <h5 class="mt-0 mb-1 testimonials-list-autor">John Doe</h5>
-					      <p class="testimonials-list-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-					    </div>
-					  </li>
-					  <li class="media">
-					    <img class="mr-3 align-self-center" src="img/testimonials_avatar2.png" alt="Generic placeholder image">
-					    <div class="media-body testimonials-list-massage">
-					      <h5 class="mt-0 mb-1 testimonials-list-autor">Khalessi</h5>
-					      <p class="testimonials-list-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-					    </div>
-					  </li>
-						<li class="media">
-					    <img class="align-self-center mr-3" src="img/testimonials_avatar.png" alt="Generic placeholder image">
-					    <div class="media-body testimonials-list-massage">
-					      <h5 class="mt-0 mb-1 testimonials-list-autor">John Doe</h5>
-					      <p class="testimonials-list-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-					    </div>
-					  </li>
-					 <li class="media media-invisible">
-						 <img class="mr-3 align-self-center" src="img/testimonials_avatar2.png" alt="Generic placeholder image">
-						 <div class="media-body testimonials-list-massage">
-							 <h5 class="mt-0 mb-1 testimonials-list-autor">Khalessi</h5>
-							 <p class="testimonials-list-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-						 </div>
-						</li>
-					</ul>
-					<button type="button" id="btn-down" class="btn btn-lg btn-block testimonials-btn-down testimonials-btn-message">&or;</button>
+    			<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						
+						<div class="carousel-item active" data-interval="10000">
+							<div class="d-block w-100">
+								<img class="autor-img" src="img/testimonials_avatar.png" alt="Generic placeholder image">
+								<div class="media-body testimonials-list-massage">
+									<h5 class="mt-0 mb-1 testimonials-list-autor">John Doe</h5>
+									<p class="testimonials-list-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+								</div>
+								</div>
+							</div>
+							
+						<div class="carousel-item" data-interval="2000">
+							<div class="d-block w-100">
+								<img class="autor-img" src="img/testimonials_avatar2.png" alt="Generic placeholder image">
+								<div class="media-body testimonials-list-massage">
+									<h5 class="mt-0 mb-1 testimonials-list-autor">Khalessi</h5>
+									<p class="testimonials-list-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+								</div>
+								</div>
+							</div>
+							
+						<div class="carousel-item">
+							<div class="d-block w-100">
+								<img class="autor-img" src="img/testimonials_avatar.png" alt="Generic placeholder image">
+								<div class="media-body testimonials-list-massage">
+									<h5 class="mt-0 mb-1 testimonials-list-autor">John Doe</h5>
+									<p class="testimonials-list-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+								</div>
+								</div>
+							</div>
+						</div>
+						
+					<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
 				</div>
-    	</div>
+			</div>
 		</div>
 	</section>
 	<section class="team" id="About Us">
