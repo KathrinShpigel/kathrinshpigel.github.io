@@ -29,14 +29,17 @@ body {
     display: none;
     width: 70px;
     height: 70px;
-    border: 1px solid #000000;
+    border: 2px solid #FFFFFF;
     border-radius: 50%;
     background: #ffffff url('../images/scrollUp.png');
     background-size: cover;
+    transition: bottom .5s ease-in-out;
 }
 
 .scrollUp:hover {
     cursor: pointer;
+    bottom: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 /* CONTAINER */
@@ -149,7 +152,6 @@ body {
     font-size: 18px;
     width: 430px;
     height: 70px;
-    padding-top: 5px;
     padding-left: 15px;
     padding-right: 15px;
     border: 2px solid #C4C4C4;
@@ -167,6 +169,7 @@ body {
     position: relative;
     color: #FFFFFF;
     border: 2px solid #C4C4C4;
+    border-left: none;
     background-color: #C4C4C4;
     padding: 19px 23px 19px 36px;
     font-size: 25px;
@@ -181,6 +184,11 @@ body {
     background-image: url('../images/search.svg');
     top: 24px;
     left: 9px;
+}
+
+.search__form-btn:hover {
+    color: #ffffff;
+    background-color: #020202;
 }
 
 /* OPTIONS */
@@ -260,6 +268,20 @@ body {
     font-weight: 400;
 }
 
+.popular__title::after {
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0;
+    transition: width .3s ease-in-out;
+}
+
+.popular__title:hover::after {
+    width: 30%;
+}
+
 .popular__inner {
     display: flex;
     flex-wrap: wrap;
@@ -272,6 +294,7 @@ body {
     height: 280px;
     border-radius: 50%;
     object-fit: cover;
+    transition: .5s ease-in-out;
 }
 
 .popular__item-title {
@@ -280,6 +303,7 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: #888888;
+    transition: .5s ease-in-out;
 }
 
 .popular__link {
@@ -287,6 +311,21 @@ body {
     text-decoration: none;
     background-color: #C4C4C4;
     padding: 13px 48px;
+    transition: .5s ease-in-out;
+}
+
+.popular__item:hover .popular__link {
+    color: #ffffff;
+    background-color: #020202;
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.popular__item:hover .popular__item-title {
+    color: #000000;
+}
+
+.popular__item:hover .popular__img {
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.5);
 }
 
 /* REASON */
@@ -322,7 +361,13 @@ body {
     left: 0;
     width: 103px;
     height: 103px;
+    border-radius: 50%;
     transform: translateY(-50%);
+    transition: box-shadow .5s ease-in-out;
+}
+
+.reason__item:hover .reason__title::before {
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.5);
 }
 
 .reason__title--icon-1::before {
@@ -354,6 +399,10 @@ body {
     background-image: url('../images/arrow-black.svg');
 }
 
+.reason__link:hover {
+    color: #000000;
+}
+
 /* BEST */
 
 .best {
@@ -383,6 +432,10 @@ body {
     text-decoration: none;
     background-color: #020202;
     padding: 16px 18px;
+}
+
+.best__link:hover {
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.5);
 }
 
 /* ABOUT */
@@ -448,6 +501,13 @@ body {
     color: #000000;
     border: none;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.our-managers__btn:hover {
+    color: #ffffff;
+    background-color: #4c4c4c;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
 .blog {
@@ -483,6 +543,10 @@ body {
     transform: translateY(-50%);
 }
 
+.blog__link:hover {
+    text-decoration: underline;
+}
+
 .reviews {
     width: 300px;
 }
@@ -508,6 +572,13 @@ body {
     font-size: 18px;
     line-height: 18px;
     text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.reviews__link:hover {
+    color: #ffffff;
+    background-color: #4c4c4c;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
 /* FOOTER */
@@ -535,6 +606,10 @@ body {
     color: #ffffff;
     font-size: 24px;
     line-height: 36px;
+}
+
+.footer__menu-link:hover {
+    color: #4c4c4c;
 }
 
 .footer__form {
@@ -575,6 +650,12 @@ body {
     padding: 24px 35px;
     background: #C4C4C4;
     border: 2px solid #C4C4C4;
+    border-left: none;
+}
+
+.footer__form-btn:hover {
+    color: #ffffff;
+    background-color: #020202;
 }
 
 .footer__logo {
@@ -592,6 +673,9 @@ body {
     .popular__item {
         width: 50%;
         margin-bottom: 50px;
+    }
+    .popular__title:hover::after {
+        width: 60%;
     }
     .popular__img {
         width: 400px;
@@ -655,6 +739,9 @@ body {
         width: 280px;
         height: 280px;
     }
+    .popular__title:hover::after {
+        width: 80%;
+    }
     .reason {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -703,6 +790,9 @@ body {
     }
     .slider-item {
         min-height: 400px;
+    }
+    .popular__title:hover::after {
+        width: 0;
     }
     .best {
         min-height: 400px;
