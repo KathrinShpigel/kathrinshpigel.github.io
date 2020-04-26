@@ -116,6 +116,7 @@ hr {
 .bg-intro {
     color: #FFF;
     background-image: url(../img/Bg.jpg);
+    background-image: url(../img/Bg.webp);
     background-repeat: no-repeat;
     background-position: center;
     /*background-size*/
@@ -280,7 +281,7 @@ hr {
     padding-top: 130px;
     padding-bottom: 130px;
     background: url('../img/resume.jpg') no-repeat right, #F2F2F2;
-
+    background: url('../img/resume.webp') no-repeat right, #F2F2F2;
 }
 
 .btn-success {
