@@ -1,225 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новости культуры</title>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Raleway|Roboto:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>to2rent</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Roboto+Condensed&display=swap&subset=cyrillic" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-inner">
-                <h1 class="header__logo logo">
-                    <a class="" href="#">Новости культуры</a>
-                </h1>
-                <nav class="menu header__menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="#" class="menu__item-link">НОВОСТИ</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__item-link">ОБЗОРЫ</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__item-link">МУЗЫКА</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__item-link">АРХИТЕКТУРА</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__item-link">КИНО</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__item-link">ТЕАТР</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__item-link">ЛИТЕРАТУРА</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__item-link">РЕЛИГИЯ</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__item-link">ЖИВОПИСЬ</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+  <header class="header">
+    <div class="logo header__logo">
+      <a href="#" class="logo__link">
+        <img src="images/logo.svg" alt="logo" class="logo__link-img">
+      </a>
+    </div>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__list-item">
+          <a href="#" class="menu__list-link menu__list-link--aktive">О нас</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="#" class="menu__list-link">Дома</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="#" class="menu__list-link">Квартиры</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="#" class="menu__list-link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="slider">
+    <div class="slider-item" style="background-image: url('images/slider-item-1.jpg');"></div>
+    <div class="slider-item" style="background-image: url('images/slider-item-2.jpg');"></div>
+    <div class="slider-item" style="background-image: url('images/slider-item-3.jpg');"></div>
+  </section>
+  <section class="search">
+    <div class="search__inner">
+      <form action="" class="search__form">
+        <label for="search__form-input" class="search__form-label">Поиск<br>Аппартаментов</label>
+        <input type="text" id="search__form-input" class="search__form-input" placeholder="Введите город">
+        <button type="submit" class="search__form-btn">Найти</button>
+      </form>
+    </div>
+  </section>
+  <section class="popular">
+    <h3 class="popular__title">Самые популярные варианты</h3>
+    <div class="container">
+      <div class="popular__inner">
+        <div class="popular__item">
+          <img src="images/popular-1.jpg" alt="Popular image" class="popular__img">
+          <h5 class="popular__item-title">Апартаменты<br>Москва</h5>
+          <a href="#" class="popular__link">детали</a>
         </div>
-    </header>
-    <aside class="main__news" style="background-image: url('images/main-news-bg.jpg');
-                                     background-image: url('images/main-news-bg.webp');">
-        <div class="container">
-            <div class="main__news-inner">
-                <span class="main__news-new">НОВОE</span>
-                <div class="main__news-icon"><a href="#"></a></div>
-                <div class="main__news-info">
-                    <h3 class="main__news-title">Подводный отель</h3>
-                    <p class="main__news-description">
-                        Как известно, Дубай – город контрастов. Самые революционные 
-                        и фантастические мечты архитекторов способен воплотить в жизнь
-                        этот мегаполис, построенный на нефти и за счет нефти
-                    </p>
-                </div>
-            </div>
+        <div class="popular__item">
+          <img src="images/popular-2.jpg" alt="Popular image" class="popular__img">
+          <h5 class="popular__item-title">Апартаменты<br>Киев</h5>
+          <a href="#" class="popular__link">детали</a>
         </div>
-    </aside>
-    <article class="reviews">
-        <div class="container">
-            <h4 class="reviews-title">ОБЗОРЫ</h4>
-            <div class="reviews-inner">
-                <article class="reviews__item">
-                    <div class="reviews__item-img">
-                        <picture>
-                            <source type="image/webp" srcset="images/reviews-1.webp 1x">
-                            <img src="images/reviews-1.jpg" alt="Reviews image">
-                        </picture>
-                    </div>
-                    <h5 class="reviews__item-title">
-                        <a class="reviews__link" href="#">«Шальные годы» Монпарнаса</a>
-                    </h5>
-                    <p class="reviews__item-description">
-                        В Музее изобразительных искусств имени Пушкина с 29 сентября
-                        по 29 ноября проходит выставка «Шальные годы Монпарнаса»
-                    </p>
-                </article>
-                <article class="reviews__item reviews__item--aktiv">
-                    <div class="reviews__item-img">
-                        <picture>
-                            <source type="image/webp" srcset="images/reviews-2.webp 1x">
-                            <img src="images/reviews-2.jpg" alt="Reviews image">
-                        </picture>
-                    </div>
-                    <h5 class="reviews__item-title">
-                        <a class="reviews__link" href="#">Анатомия за 30 секунд</a>
-                    </h5>
-                    <p class="reviews__item-description">
-                        Сейчас, когда мир открыт нараспашку для человека 
-                        и его познавательных изысканий, интерес 
-                        к научно‑популярной литературе заметно вырос
-                    </p>
-                </article>
-                <article class="reviews__item">
-                    <div class="reviews__item-img">
-                        <picture>
-                            <source type="image/webp" srcset="images/reviews-3.webp 1x">
-                            <img src="images/reviews-3.jpg" alt="Reviews image">
-                        </picture>
-                    </div>
-                    <h5 class="reviews__item-title">
-                        <a class="reviews__link" href="#">Сферические чудаки</a>
-                    </h5>
-                    <p class="reviews__item-description">
-                        Корреспондентам «Культурного обозревателя»
-                        посчастливилось побывать в театре «Сфера»
-                        на премьере спектакля «Чудаки и зануды» 
-                    </p>
-                </article>
-            </div>
+        <div class="popular__item">
+          <img src="images/popular-3.jpg" alt="Popular image" class="popular__img">
+          <h5 class="popular__item-title">Коттедж Modern<br>Лос Анджелес</h5>
+          <a href="#" class="popular__link">детали</a>
         </div>
-    </article>
-    <section class="promo">
-        <div class="container">
-            <div class="promo__inner">
-                <h2 class="promo__title">АБОНЕМЕНТЫ В ТЕАТР</h2>
-                <div class="promo__list">
-                    <div class="promo__item">
-                        <h3 class="promo__item-title">
-                            <a href="#">Скидка 50% на весь сезон 2020</a>
-                        </h3>
-                        <div class="promo__item-description">
-                            Покупая абонемент на сезон 2020 года высэкономите половину
-                            стоимости всех спектаклей
-                        </div>
-                    </div>
-                    <div class="promo__item">
-                        <h3 class="promo__item-title">
-                            <a href="#">Места у сцены</a>
-                        </h3>
-                        <div class="promo__item-description">
-                            Только для обладателей абонементов будет возможность сесть поближе к сцене
-                        </div>
-                    </div>
-                    <div class="promo__item">
-                        <h3 class="promo__item-title">
-                            <a href="#">Автограф-сессия актёров</a>
-                        </h3>
-                        <div class="promo__item-description">
-                            После спектаклей у вас будет возможность пообщаться с актёрами
-                            и взять у них автограф
-                        </div>
-                    </div>
-                </div>
-                <div class="promo__btn">
-                    <a class="promo__btn-link" href="#">
-                        смотреть
-                    </a>
-                </div>
-            </div>
+        <div class="popular__item">
+          <img src="images/popular-4.jpg" alt="Popular image" class="popular__img">
+          <h5 class="popular__item-title">Коттедж Семейный<br>Лондон</h5>
+          <a href="#" class="popular__link">детали</a>
         </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__top">
-                    <div class="footer__logo logo">
-                        <a class="" href="#">Новости культуры</a>
-                    </div>
-                    <nav class="menu footer__menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="#" class="menu__item-link">НОВОСТИ</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__item-link">ОБЗОРЫ</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__item-link">МУЗЫКА</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__item-link">АРХИТЕКТУРА</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__item-link">КИНО</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__item-link">ТЕАТР</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__item-link">ЛИТЕРАТУРА</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__item-link">РЕЛИГИЯ</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__item-link">ЖИВОПИСЬ</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer__bottom">
-                    <div class="footer__social">
-                        <ul class="social__list">
-                            <li class="social__list-item">
-                                <a class="social__list-link link__inst" href="#"></a>
-                            </li>
-                            <li class="social__list-item">
-                                <a class="social__list-link link__fb" href="#"></a>
-                            </li>
-                            <li class="social__list-item">
-                                <a class="social__list-link link__tw" href="#"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+  <section class="reason">
+    <div class="container">
+      <div class="reason__inner">
+        <div class="reason__item">
+          <h4 class="reason__title reason__title--icon-1">Мы экономим Ваше время и Ваши деньги</h4>
+          <p class="reason__text">
+            Вы можете легко подобрать себе самую лучшую недвижимость для аренды на нашем
+            сайте по выгодной цене. Наши менеджеры с удовольствием помогут Вам и ответят на все вопросы.
+          </p>
+          <a href="#" class="reason__link">Подробнее</a>
         </div>
-    </footer>
-        
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>    
+        <div class="reason__item">
+          <h4 class="reason__title reason__title--icon-2">Арендуйте лучшую недвижимость в крупных городах </h4>
+          <p class="reason__text">
+            Наша база элитной недвижимости насчитывает более 5000 вариантов в крупных городах
+            мира.Мы поможем Вам выбрать самую лучшую, также предоставим дополнительный сервис
+          </p>
+          <a href="#" class="reason__link">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="best" style="background-image: url('images/best.jpg')">
+    <div class="container">
+      <h3 class="best-title">Коттедж Modern<br>Лос Анджелес</h3>
+      <a href="#" class="best__link">Забронировать</a>
+    </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="our-managers">
+          <h4 class="our-managers__title about__title">Наши менеджеры</h4>
+          <div class="our-managers__items">
+            <div class="our-managers__item">
+              <img src="images/our-managers-1.jpg" alt="Our managers" class="our-managers__img">
+              <ul class="our-managers__list">
+                <li class="our-managers__name">Макс</li>
+                <li class="our-managers__age">30 лет</li>
+                <li class="our-managers__location">Москва</li>
+              </ul>
+              <button class="our-managers__btn">Связаться</button>
+            </div>
+            <div class="our-managers__item">
+              <img src="images/our-managers-2.jpg" alt="Our managers" class="our-managers__img">
+              <ul class="our-managers__list">
+                <li class="our-managers__name">Анна</li>
+                <li class="our-managers__age">28 лет</li>
+                <li class="our-managers__location">Киев</li>
+              </ul>
+              <button class="our-managers__btn">Связаться</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog">
+          <h4 class="about__title">Блог</h4>
+          <ul class="blog__list">
+            <li class="blog__item">
+              <a href="#" class="blog__link">Системы охраны и видеонаблюдения</a>
+            </li>
+            <li class="blog__item">
+              <a href="#" class="blog__link">Клубная недвижимость всегда в цене</a>
+            </li>
+            <li class="blog__item">
+              <a href="#" class="blog__link">Все плюсы от посуточной аренды квартир</a>
+            </li>
+            <li class="blog__item">
+              <a href="#" class="blog__link">Как выбрать жильё своей мечты в Киеве?</a>
+            </li>
+            <li class="blog__item">
+              <a href="#" class="blog__link">Топ 10 ВИП коттеджей Лос Анджелеса</a>
+            </li>
+            <li class="blog__item">
+              <a href="#" class="blog__link">Лучшие аппартаменты с панорамным видом</a>
+            </li>
+            <li class="blog__item">
+              <a href="#" class="blog__link">Дома для аренды на год в Майами</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="reviews">
+          <h4 class="about__title">Отзывы</h4>
+          <img src="images/reviews.jpg" alt="Reviews image" class="reviews__img">
+          <p class="reviews__text">
+            Это лучший сервис по подбору апартаментов. Пользуюсь услугами To rent уже 5 лет.
+            Всегда идеально и именно то, что мне нужно.
+          </p>
+          <a href="#" class="reviews__link">Еще отзывы</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__top-inner">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">О нас</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Дома</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Аппартамент</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Отзывы</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Контакты</a>
+            </li>
+          </ul>
+          <form action="" class="footer__form">
+            <label for="footer__form-input" class="footer__form-label">Связаться<br>с нами</label>
+            <input type="text" placeholder="Задать вопрос" id="footer__form-input" class="footer__form-input">
+            <button type="submit" class="footer__form-btn">Отправить</button>
+          </form>
+        </div>
+      </div> 
+    </div>
+    <div class="logo footer__logo">
+      <a href="#" class="logo__link">
+        <img src="images/logo.svg" alt="logo" class="logo__link-img">
+      </a>
+    </div>
+  </footer>
+  <div class="scrollUp"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
