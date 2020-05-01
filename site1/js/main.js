@@ -1,4 +1,13 @@
 $(function(){
+
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+
+
     $('.header__slider').slick({
         infinite: true,
         fade: true,
@@ -167,5 +176,21 @@ $(function(){
     });
 
     new WOW().init();
+
+    $(window).scroll(function() {
+      var height = $(window).scrollTop();
+      if (height > 100) {
+          $('#back2Top').fadeIn();
+      } else {
+          $('#back2Top').fadeOut();
+      }
+    });
+    $(document).ready(function() {
+      $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+      }); 
+    });
 
 });
