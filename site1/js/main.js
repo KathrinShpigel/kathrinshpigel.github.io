@@ -166,4 +166,6 @@ $(function(){
       $(this).toggleClass('close');
     });
 
+    new WOW().init();
+
 });
