@@ -11,8 +11,8 @@ $(function(){
     $('.header__slider').slick({
         infinite: true,
         fade: true,
-        prevArrow: '<img src="../images/arow-left.svg" alt="Prev" class="slider-arrows slider-arrow__left">',
-        nextArrow: '<img src="../images/arow-right.svg" alt="Next" class="slider-arrows slider-arrow__right">',
+        prevArrow: '<button class="slider-arrows slider-arrow__left"></button>',
+        nextArrow: '<button class="slider-arrows slider-arrow__right"></button>',
         asNavFor: '.slider-dotshead',
         responsive: [
           {
@@ -45,8 +45,8 @@ $(function(){
         slidesToScroll: 1,
         centerMode: true,
         focusOnSelect: true,
-        prevArrow: '<img src="../images/arow-left.svg" alt="Prev" class="slider-arrows slider-arrow__left">',
-        nextArrow: '<img src="../images/arow-right.svg" alt="Next" class="slider-arrows slider-arrow__right">',
+        prevArrow: '<button class="slider-arrows slider-arrow__left"></button>',
+        nextArrow: '<button class="slider-arrows slider-arrow__right"></button>',
         asNavFor: '.slider-map',
         responsive: [
           {
@@ -119,8 +119,8 @@ $(function(){
     $('.holder__slider, .shop__slider').slick({
         infinite: true,
         fade: true,
-        prevArrow: '<img src="../images/arow-left.svg" alt="Prev" class="slider-arrows slider-arrow__left">',
-        nextArrow: '<img src="../images/arow-right.svg" alt="Next" class="slider-arrows slider-arrow__right">'
+        prevArrow: '<button class="slider-arrows slider-arrow__left"></button>',
+        nextArrow: '<button class="slider-arrows slider-arrow__right"></button>'
     });
 
     jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');

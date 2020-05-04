@@ -23,8 +23,8 @@ $(function(){
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2500,
-        prevArrow: '<img src="../images/arrows-left.jpg" alt="Prev" class="slider-arrows slider-arrows__left">',
-        nextArrow: '<img src="../images/arrows-right.jpg" alt="Next" class="slider-arrows slider-arrows__right">',
+        prevArrow: '<button class="slider-arrows slider-arrows__left"></button>',
+        nextArrow: '<button class="slider-arrows slider-arrows__right"></button>',
         responsive: [
             {
               breakpoint: 800,
