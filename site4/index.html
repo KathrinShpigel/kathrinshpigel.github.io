@@ -1,352 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/header-style.css">
-	<link rel="stylesheet" type="text/css" href="css/about-style.css">
-	<link rel="stylesheet" type="text/css" href="css/portfolio-style.css">
-	<link rel="stylesheet" type="text/css" href="css/ourProduct-style.css">
-	<link rel="stylesheet" type="text/css" href="css/ourClients-style.css">
-	<link rel="stylesheet" type="text/css" href="css/teamWork-style.css">
-	<link rel="stylesheet" type="text/css" href="css/skills-style.css">
-	<link rel="stylesheet" type="text/css" href="css/services-style.css">
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
-	<script src="jQuery 3.4.1.js"></script>
-	<title>Second Project - "Creativia"</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600|Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-	<header class="header header-bg slide-left slide-right">
-<!-- Header - menu -->
-<!-- menu -->
-		<div class="header-logo">
-			<a href="#"><img src="img/logo.png" alt="Creativia"></a>
-		</div>
-		<nav id= "menu" class="header-nav">
-			<a href="#" class="header-nav__link">Home</a>
-			<a href="#About-us" class="header-nav__link">About us</a>
-			<a href="#Portfolio" class="header-nav__link">Portfolio</a>
-			<a href="#Clients" class="header-nav__link">Clients</a>
-			<a href="#Team" class="header-nav__link">Team</a>
-			<a href="#Services" class="header-nav__link">Services</a>
-			<a href="#" class="header-nav__link">Blog</a>
-			<a href="#Contact" class="header-nav__link">Contact</a>
-		</nav>
-<!-- Burger menu -->
+    <header class="header" id="header">
+        <div class="header-slider">
+            <div class="wrapper">
+                <div class="header-slider__item"
+                style="background-image: url('images/header-bg.jpg');
+                background-image: url('images/header-bg.webp')">
+                    <div class="header__content">
+                        <h1 class="header__title animated fadeIn slow">Эверест</h1>
+                        <div class="header__info animated fadeIn slower">
+                            <a href="#" class="btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="header-slider__item"
+                style="background-image: url('images/header-bg2.jpg');
+                background-image: url('images/header-bg2.webp')">
+                    <div class="header__content">
+                        <h1 class="header__title">Эльбрус</h1>
+                        <div class="header__info">
+                            <a href="#" class="btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="header-slider__item"
+                style="background-image: url('images/header-bg.jpg');
+                background-image: url('images/header-bg.webp')">
+                    <div class="header__content">
+                        <h1 class="header__title">Эверест</h1>
+                        <div class="header__info">
+                            <a href="#" class="btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="header-slider__item"
+                style="background-image: url('images/header-bg2.jpg');
+                background-image: url('images/header-bg2.webp')">
+                    <div class="header__content">
+                        <h1 class="header__title">Эльбрус</h1>
+                        <div class="header__info">
+                            <a href="#" class="btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-			<input type="checkbox" id="hmt" class="hidden-menu-ticker">
-			<label class="btn-menu" for="hmt">
-				<span class="first"></span>
-				<span class="second"></span>
-				<span class="third"></span>
-			</label>
-			<ul id= "menu-burger" class="hidden-menu">
-				<li><a href="#" class="hidden-menu__link">Home</a></li>
-				<li><a href="#About-us" class="hidden-menu__link">About us</a></li>
-				<li><a href="#Portfolio" class="hidden-menu__link">Portfolio</a></li>
-				<li><a href="#Clients" class="hidden-menu__link">Clients</a></li>
-				<li><a href="#Team" class="hidden-menu__link">Team</a></li>
-				<li><a href="#Services" class="hidden-menu__link">Services</a></li>
-				<li><a href="#" class="hidden-menu__link">Blog</a></li>
-				<li><a href="#Contact" class="hidden-menu__link">Contact</a></li>
-			</ul>
+        </div>
+        <div class="header__inner">
+            <div class="container">
+                <div class="header__nav">
+                    <nav class="nav">
+                            <div class="nav__logo">
+                                <a href="#" class="logo">MOUNTAIN</a>
+                            </div>
+                            <div class="menu">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#about-us">О нас</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#tours">Туры</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#feedback">Подбор тура</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#blog">Блог</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#contacts">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </nav>
+                    <div class="header__contacts">
+                            <div class="header__contacts-phone">
+                                <div class="contacts__phone">8 (800) 777-33-25</div>
+                            </div>
+                            <div class="contacts__search icon">
+                                <form class="search" action="" method="post">
+                                    <input class="search__input" type="search" aria-label="Search through site content" placeholder="Поиск по сайту..." required>
+                                    <button class="search__btn" type="submit"></button>
+                                </form>
+                            </div>
+                            <div class="contacts__login icon">
+                                <a href="#" class="login__link" target="_blank"></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <section class="tours section" id="about-us">
+        <div class="container">
+            <div class="tours__bg wow fadeIn" data-wow-offset="200">
+                <div class="tours__inner">
+                    <h4 class="tours__title section-title">Туры с восхождением на вершины мира</h4>
+                    <div class="tours__content content-text">
+                        <p class="tours__content-text">
+                            Мы являемся экспертами в организации альпинистских туров для опытных альпинистов и для новичков.
+                            Вы можете доверить нам полную организацию вашего приключения от А до Я и быть уверенными в качестве
+                            и безопасности восхождения.
+                        </p>
+                        <p class="tours__content-text">
+                            Наша компания предоставляет все необходимое: консультацию по выбору тура, перелет, визу,
+                            бронирование проживания, питание, оборудование, необходимое для восхождения, опытных гидов, полное
+                            сопровождение.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular section">
+        <div class="container">
+            <h4 class="popular__title section-title wow fadeIn" data-wow-offset="200">Популярные туры</h4>
 
-<!-- Header - content -->
-		<div class="header-text">
-			<h1 class="header-title">why <span class="text-style-color">creativia?</span></h1>
-			<p class="header-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio<br>Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo<br>condimentum vitae,</p>
-		</div>
-		<a href="#" class="header-btn header-btn__features">Features</a>
-		<a href="#" class="header-btn header-btn__freePsd">Free psd</a>
-		<button id="button-left" class="header-btn-slider header-btn-slider__left"><i class="fas fa-chevron-left"></i></button>
-		<button id="button-right" class="header-btn-slider header-btn-slider__right"><i class="fas fa-chevron-right"></i></button>
-	</header>
-<!-- About us -->
-	<section class="about" id="About-us">
-		<h2 class="about-title">about <span class="text-style-color">creativia</span></h2>
-		<p class="about-subtitle">Lorem ipsum dolor sit amet, consectetur <span class="text-style-color">adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.</p>
-		<p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae,</p>
-		<div class="about-toggles">
-			<div class="about-taggles__block">
-				<input type="checkbox" id="block-one" class="about-taggles__input" name="blocks">
-				<label for="block-one" class="about-taggles__label">Hwo is creativia</label>
-				<div class="about-toggles__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</div>
-			</div>
-			<div class="about-taggles__block">
-				<input type="checkbox" id="block-two" class="about-taggles__input" name="blocks">
-				<label for="block-two" class="about-taggles__label">Experiences</label>
-				<div class="about-toggles__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</div>
-			</div>
-			<div class="about-taggles__block">
-				<input type="checkbox" id="block-three" class="about-taggles__input" name="blocks">
-				<label for="block-three" class="about-taggles__label">Learn more</label>
-				<div class="about-toggles__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</div>
-			</div>
-		</div>
-<!-- Page line -->
-		<div class="about-scroll-bar"><img class="point" src="svg/object.svg"></div>
-<!-- Our Skills -->
-		<div class="about-skills">
-			<div class="about-skill flat-design">
-				<span class="about-skills__icon"><i class="fas fa-heart"></i></span>
-				<h3 class="about-skills__title">FLAT DESIGN</h3>
-				<p class="about-skills__description">Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque
-					                                   vivamus eget mauris fusce sit amet</p>
-			</div>
-			<div class="about-skill retiny-ready">
-				<span class="about-skills__icon"><i class="fas fa-check-circle"></i></span>
-				<h3 class="about-skills__title">RETINA READY</h3>
-				<p class="about-skills__description">Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque
-					                                   vivamus eget mauris fusce sit amet</p>
-			</div>
-			<div class="about-skill reasponsive">
-				<span class="about-skills__icon"><i class="fas fa-mobile-alt"></i></span>
-				<h3 class="about-skills__title">RESPONSIVE</h3>
-				<p class="about-skills__description">Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque
-					                                   vivamus eget mauris fusce sit amet</p>
-			</div>
-			<div class="about-skill clean-useful">
-				<span class="about-skills__icon"><i class="fab fab fa-gripfire"></i></span>
-				<h3 class="about-skills__title">CLEAN & USEFUL</h3>
-				<p class="about-skills__description">Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque
-					                                   vivamus eget mauris fusce sit amet</p>
-			</div>
-		</div>
-	</section>
-<!-- Portfolio -->
-	<section class="portfolio" id="Portfolio">
-		<h2 class="portfolio-title">portfolio</h2>
-		<ul class="portfolio-groups">
-			<li class="portfolio-group portfolio-group_aktiv portfolio-group__all"><button type="button" class="portfolio-group__btn" id="all">all</button></li>
-			<li class="portfolio-group portfolio-group__illustration"><button type="button" class="portfolio-group__btn" id="illustration">illustration</button></li>
-			<li class="portfolio-group portfolio-group__digital-art"><button type="button" class="portfolio-group__btn" id="digital-art">digital art</button></li>
-			<li class="portfolio-group portfolio-group__web-design"><button type="button" class="portfolio-group__btn" id="web-design">web design</button></li>
-		</ul>
-		<div class="portfolio-items">
-			<div class="portfolio-item portfolio-item__1 portfolio-item__illustration">
-				<h4 class="portfolio-item__title"><img src="img/designName.png" class="portfolio-item__img" width="25px" height="25px" alt="design name">design name</h4>
-			</div>
-			<div class="portfolio-item portfolio-item__2 portfolio-item__digital-art">
-				<h4 class="portfolio-item__title"><img src="img/designName.png" class="portfolio-item__img" width="25px" height="25px" alt="design name">design name</h4>
-			</div>
-			<div class="portfolio-item portfolio-item__3 portfolio-item__digital-art2">
-				<h4 class="portfolio-item__title"><img src="img/designName.png" class="portfolio-item__img" width="25px" height="25px" alt="design name">design name</h4>
-			</div>
-			<div class="portfolio-item portfolio-item__4 portfolio-item__web-design">
-				<h4 class="portfolio-item__title"><img src="img/designName.png" class="portfolio-item__img" width="25px" height="25px" alt="design name">design name</h4>
-			</div>
-			<div class="portfolio-item portfolio-item__5 portfolio-item__web-design">
-				<h4 class="portfolio-item__title"><img src="img/designName.png" class="portfolio-item__img" width="25px" height="25px" alt="design name">design name</h4>
-			</div>
-			<div class="portfolio-item portfolio-item__6 portfolio-item__illustration">
-				<h4 class="portfolio-item__title"><img src="img/designName.png" class="portfolio-item__img" width="25px" height="25px" alt="design name">design name</h4>
-			</div>
-			<div class="portfolio-item portfolio-item__7 portfolio-item__illustration">
-				<h4 class="portfolio-item__title"><img src="img/designName.png" class="portfolio-item__img" width="25px" height="25px" alt="design name">design name</h4>
-			</div>
-			<div class="portfolio-item portfolio-item__8 portfolio-item__digital-art">
-				<h4 class="portfolio-item__title"><img src="img/designName.png" class="portfolio-item__img" width="25px" height="25px" alt="design name">design name</h4>
-			</div>
-		</div>
-<!-- Page line -->
-		<div class="portfolio-scroll-bar"><img class="portfolio-point" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNFMjFCMUI7IiBwb2ludHM9IjI1LjA0NSwxMjggMjU2LDAgNDg2Ljk1NSwxMjggNDg2Ljk1NSwzODQgMjU2LDUxMiAyNS4wNDUsMzg0ICIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" width="20px" height="20px"></div>
-	</section>
-<!-- Our Product -->
-	<section class="ourProduct">
-		<h2 class="ourProduct-title">our <span class="text-style-color">Product features</span></h2>
-		<p class="ourProduct-subtitle">Lorem ipsum dolor sit amet, consectetur <span class="text-style-color">adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.</p>
-		<ul class="ourProduct-items">
-			<li class="ourProduct-item ourProduct-item__1 ourProduct-item__left">Unlimited Color Options</li>
-			<li class="ourProduct-item ourProduct-item__2 ourProduct-item__left">Outstanding Support</li>
-			<li class="ourProduct-item ourProduct-item__3 ourProduct-item__left">Retina Ready</li>
-			<li class="ourProduct-item ourProduct-item__4 ourProduct-item__right">Unlimited Color Options</li>
-			<li class="ourProduct-item ourProduct-item__5 ourProduct-item__right">Outstanding Support</li>
-			<li class="ourProduct-item ourProduct-item__6 ourProduct-item__right">Retina Ready</li>
-		</ul>
-		<button type="button" class="ourProduct__btn">Free psd</button>
-	</section>
-<!-- Our clients -->
-	<section class="ourClients" id="Clients">
-		<h2 class="ourClients-title">our <span class="text-style-color">clients</span></h2>
-		<p class="ourClients-subtitle">Lorem ipsum dolor sit amet, consectetur <span class="text-style-color">adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.</p>
-		<h3 class="ourClients-review">HAPPY CLIENTS SAY</h3>
-		<div class="ourClients-card">
-			<p class="ourClients-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis<p>
-			<img class="ourClients-card__photo" src="img/client.png">
-			<p class="ourClients-card__client">AMR SROUR</p>
-		</div>
-		<ul class="ourClients-list__btn">
-			<li class="ourClients-list__btn-item"><button type="button" class="ourClients__btn ourClients_prev"></button></li>
-			<li class="ourClients-list__btn-item"><button type="button" class="ourClients__btn ourClients_this"></button></li>
-			<li class="ourClients-list__btn-item"><button type="button" class="ourClients__btn ourClients_next"></button></li>
-		</ul>
-		<div class="ourClients-company">
-			<img class="ourClients-company__item" src="img/company1.png" alt="company 1">
-			<img class="ourClients-company__item" src="img/company2.png" alt="company 2">
-			<img class="ourClients-company__item" src="img/company3.png" alt="company 3">
-			<img class="ourClients-company__item" src="img/company4.png" alt="company 4">
-		</div>
-<!-- Page line -->
-		<div class="ourClients-scroll-bar"><img class="ourClients-point" src="svg/objectRed.svg" width="20px" height="20px"></div>
-	</section>
-<!-- TeamWork -->
-	<section class="teamWork" id="Team">
-		<h2 class="teamWork-title">our <span class="text-style-color">teamwork</span></h2>
-		<p class="teamWork-subtitle">Lorem ipsum dolor sit amet, consectetur <span class="text-style-color">adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.</p>
-		<div class="teamWork-cards">
-			<div class="teamWork-card">
-				<div class="teamWork-card__photo teamWork-card__photo-1">
-					<div class="teamWork-card__social">
-						<a href="#" class="teamWork-card__social-item"><i class="fab-teamWork-card__social-item fab fa-facebook-f"></i></a>
-						<a href="#" class="teamWork-card__social-item"><i class="fab-teamWork-card__social-item fab fa-twitter"></i></a>
-						<a href="#" class="teamWork-card__social-item"><i class="fab-teamWork-card__social-item fab fa-google-plus-g"></i></a>
-					</div>
-				</div>
-				<h4 class="teamWork-card__name">BRUCE WAYNE</h4>
-				<p class="teamWork-card__profession">Webdesigner</p>
-			</div>
-			<div class="teamWork-card">
-				<div class="teamWork-card__photo teamWork-card__photo-2">
-					<div class="teamWork-card__social">
-						<a href="#" class="teamWork-card__social-item"><i class="fab-teamWork-card__social-item fab fa-facebook-f"></i></a>
-						<a href="#" class="teamWork-card__social-item"><i class="fab-teamWork-card__social-item fab fa-twitter"></i></a>
-						<a href="#" class="teamWork-card__social-item"><i class="fab-teamWork-card__social-item fab fa-google-plus-g"></i></a>
-					</div>
-				</div>
-				<h4 class="teamWork-card__name">AMR SROUR</h4>
-				<p class="teamWork-card__profession">Webdesigner</p>
-			</div>
-			<div class="teamWork-card">
-				<div class="teamWork-card__photo teamWork-card__photo-3">
-					<div class="teamWork-card__social">
-						<a href="#" class="teamWork-card__social-item"><i class="fab-teamWork-card__social-item fab fa-facebook-f"></i></a>
-						<a href="#" class="teamWork-card__social-item"><i class="fab-teamWork-card__social-item fab fa-twitter"></i></a>
-						<a href="#" class="teamWork-card__social-item"><i class="fab-teamWork-card__social-item fab fa-google-plus-g"></i></a>
-					</div>
-				</div>
-				<h4 class="teamWork-card__name">SARAH DOE</h4>
-				<p class="teamWork-card__profession">Webdesigner</p>
-			</div>
-			<div class="teamWork-card">
-				<div class="teamWork-card__photo teamWork-card__photo-4">
-					<div class="teamWork-card__social">
-						<a href="#" class="teamWork-card__social-item"><i class="fab-teamWork-card__social-item fab fa-facebook-f"></i></a>
-						<a href="#" class="teamWork-card__social-item"><i class="fab-teamWork-card__social-item fab fa-twitter"></i></a>
-						<a href="#" class="teamWork-card__social-item"><i class="fab-teamWork-card__social-item fab fa-google-plus-g"></i></a>
-					</div>
-				</div>
-				<h4 class="teamWork-card__name">JOHAN DE</h4>
-				<p class="teamWork-card__profession">Webdesigner</p>
-			</div>
-		</div>
-<!-- Page line -->
-		<div class="teamWork-scroll-bar"><img class="teamWork-point" src="svg/object.svg" width="20px" height="20px"></div>
-	</section>
-<!-- Skills -->
-	<section class="skills">
-		<h2 class="skills-title">our <span class="text-style-color">Skills</span></h2>
-		<p class="skills-subtitle">Lorem ipsum dolor sit amet, consectetur <span class="text-style-color">adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.</p>
-		<div class="skills-items">
-			<div class="skill-item">
-				<p class="skills__bg">90<span class="red_style">%</span></p>
-				<h3 class="skills__title">PHOTOSHOP</h3>
-				<p class="skills__description">Donec luctus tortor in<br> placerat faucibus</p>
-			</div>
-			<div class="skill-item">
-				<p class="skills__bg">80<span class="red_style">%</span></p>
-				<h3 class="skills__title">HTML</h3>
-				<p class="skills__description">Donec luctus tortor in<br> placerat faucibus</p>
-			</div>
-			<div class="skill-item">
-				<p class="skills__bg">70<span class="red_style">%</span></p>
-				<h3 class="skills__title">PHP</h3>
-				<p class="skills__description">Donec luctus tortor in<br> placerat faucibus</p>
-			</div>
-			<div class="skill-item">
-				<p class="skills__bg">90<span class="red_style">%</span></p>
-				<h3 class="skills__title">WORDPRESS</h3>
-				<p class="skills__description">Donec luctus tortor in<br> placerat faucibus</p>
-			</div>
-		</div>
-	</section>
-<!-- Services -->
-	<section class="services" id="Services">
-		<h2 class="services-title">our <span class="text-style-color">services</span></h2>
-		<p class="services-subtitle">Lorem ipsum dolor sit amet, consectetur <span class="text-style-color">adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.</p>
-		<div class="services-items">
-			<div class="services-item">
-				<div class="services__titles"><span class="services__icon"><i class="fas fa-code"></i></span><h3 class="services__title">DEVELOPMENT</h3></div>
-				<div class="services__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna
-					 																 vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent
-					 																 faucibus nisl sit amet nulla sollicitudin.</div>
-			</div>
-			<div class="services-item">
-				<div class="services__titles"><span class="services__icon"><i class="fab fa-html5"></i></span><h3 class="services__title">HTML/CSS</h3></div>
-				<div class="services__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna
-					 																 vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent
-					 																 faucibus nisl sit amet nulla sollicitudin.</div>
-			</div>
-			<div class="services-item">
-				<div class="services__titles"><span class="services__icon"><i class="fab fa-wordpress-simple"></i></span><h3 class="services__title">WORDPRESS</h3></div>
-				<div class="services__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna
-					 																 vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent
-					 																 faucibus nisl sit amet nulla sollicitudin.</div>
-			</div>
-			<div class="services-item">
-				<div class="services__titles"><span class="services__icon"><i class="fas fa-mobile-alt"></i></span><h3 class="services__title">APPLICATIONS</h3></div>
-				<div class="services__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna
-					 																 vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent
-					 																 faucibus nisl sit amet nulla sollicitudin.</div>
-			</div>
-			<div class="services-item">
-				<div class="services__titles"><span class="services__icon"><i class="fas fa-pencil-alt"></i></span><h3 class="services__title">UI/UX DESIGN</h3></div>
-				<div class="services__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna
-					 																 vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent
-					 																 faucibus nisl sit amet nulla sollicitudin.</div>
-			</div>
-			<div class="services-item">
-				<div class="services__titles"><span class="services__icon"><i class="fas fa-laptop"></i></span><h3 class="services__title">RESPONSIVE LAYOUT</h3></div>
-				<div class="services__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna
-					 																 vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent
-					 																 faucibus nisl sit amet nulla sollicitudin.</div>
-			</div>
-		</div>
-<!-- Page line -->
-		<div class="services-scroll-bar"><img class="services-point" src="svg/objectRed.svg" width="20px" height="20px"></div>
-	</section>
-<!-- Footer -->
-	<footer class="footer" id="Contact">
-		<h2 class="footer-title">fine us <span class="text-style-color">Here</span></h2>
-		<p class="footer-subtitle">Lorem ipsum dolor sit amet, consectetur <span class="text-style-color">adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.</p>
-		<div class="footer-map" id="map"></div>
-		<div class="footer-description">Creativia</div>
-	</footer>
-<!--
-	<section class="prices">
-		//часть 9
-	</section>
-	<section class="lastTweets">
-		//часть 10
-	</section>
-	<section class="blog">
-		//часть 11
-	</section>
-	<section class="socialMedia">
-		//часть 12
-	</section>
-	<section class="contactUs">
-		//часть 13
-	</section>
--->
-	<a id="button-up" class="button-up"></a>
-	<script src="js/slider.js"></script>
-	<script src="js/button-up.js"></script>
-	<script src="js/btn-portfolio-group.js"></script>
-	<script src="js/scrolll-page.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
-	<script src="js/footer-map.js"></script>
+            <div class="popular-slider">
+                <div class="wrapper">                
+                    <div class="popular-slider__item wow fadeInLeft" data-wow-offset="150" data-wow-delay=".3s"
+                    style="background-image: url('images/popular-1.jpg');
+                    background-image: url('images/popular-1.webp')">
+                        <div class="flag"></div>
+                        <div class="popular-slider__item-location">Россия</div>
+                        <div class="popular-slider__item-title">
+                            <a class="popular__link" href="#">Белуха</a>
+                        </div>
+                        <div class="popular-slider__item-info">
+                            <ul class="info__list">
+                                <li class="info__item">4506 м</li>
+                                <li class="info__item">12 дней</li>
+                                <li class="info__item">от 45 000 &#8381;</li>
+                            </ul>
+                        </div>
+                        <div class="popular-slider__item-level level-middle">Средний уровень</div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="popular-slider__item wow fadeInUp" data-wow-offset="150" data-wow-delay=".5s"
+                    style="background-image: url('images/popular-2.jpg');
+                    background-image: url('images/popular-2.webp')">
+                        <div class="flag"></div>
+                        <div class="popular-slider__item-location">Россия</div>
+                        <div class="popular-slider__item-title">
+                            <a class="popular__link" href="#">Эльбрус</a>
+                        </div>
+                        <div class="popular-slider__item-info">
+                            <ul class="info__list">
+                                <li class="info__item">5642 м</li>
+                                <li class="info__item">10 дней</li>
+                                <li class="info__item">от 25 000 &#8381;</li>
+                            </ul>
+                        </div>
+                        <div class="popular-slider__item-level level-middle">Средний уровень</div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="popular-slider__item wow fadeInRight" data-wow-offset="150" data-wow-delay=".3s"
+                    style="background-image: url('images/popular-3.jpg');
+                    background-image: url('images/popular-3.webp')">
+                        <div class="flag"></div>
+                        <div class="popular-slider__item-location">Танзания</div>
+                        <div class="popular-slider__item-title">
+                            <a class="popular__link" href="#">Килиманджаро</a>
+                        </div>
+                        <div class="popular-slider__item-info">
+                            <ul class="info__list">
+                                <li class="info__item">5895 м</li>
+                                <li class="info__item">4 дня</li>
+                                <li class="info__item">от 55 000 &#8381;</li>
+                            </ul>
+                        </div>
+                        <div class="popular-slider__item-level level-simple">Простой уровень</div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="popular-slider__item"
+                    style="background-image: url('images/popular-1.jpg');
+                    background-image: url('images/popular-1.webp')">
+                        <div class="flag"></div>
+                        <div class="popular-slider__item-location">Россия</div>
+                        <div class="popular-slider__item-title">
+                            <a class="popular__link" href="#">Белуха</a>
+                        </div>
+                        <div class="popular-slider__item-info">
+                            <ul class="info__list">
+                                <li class="info__item">4506 м</li>
+                                <li class="info__item">12 дней</li>
+                                <li class="info__item">от 45 000 &#8381;</li>
+                            </ul>
+                        </div>
+                        <div class="popular-slider__item-level level-middle">Средний уровень</div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="popular-slider__item"
+                    style="background-image: url('images/popular-2.jpg');
+                    background-image: url('images/popular-2.webp')">
+                        <div class="flag"></div>
+                        <div class="popular-slider__item-location">Россия</div>
+                        <div class="popular-slider__item-title">
+                            <a class="popular__link" href="#">Эльбрус</a>
+                        </div>
+                        <div class="popular-slider__item-info">
+                            <ul class="info__list">
+                                <li class="info__item">5642 м</li>
+                                <li class="info__item">10 дней</li>
+                                <li class="info__item">от 25 000 &#8381;</li>
+                            </ul>
+                        </div>
+                        <div class="popular-slider__item-level level-middle">Средний уровень</div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="popular-slider__item"
+                    style="background-image: url('images/popular-3.jpg');
+                    background-image: url('images/popular-3.webp')">
+                        <div class="flag"></div>
+                        <div class="popular-slider__item-location">Танзания</div>
+                        <div class="popular-slider__item-title">
+                            <a class="popular__link" href="#">Килиманджаро</a>
+                        </div>
+                        <div class="popular-slider__item-info">
+                            <ul class="info__list">
+                                <li class="info__item">5895 м</li>
+                                <li class="info__item">4 дня</li>
+                                <li class="info__item">от 55 000 &#8381;</li>
+                            </ul>
+                        </div>
+                        <div class="popular-slider__item-level level-simple">Простой уровень</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="promo" id="tours"
+    style="background-image: url('images/promo-bg.jpg');
+    background-image: url('images/promo-bg.webp')">
+        <div class="container">
+            <div class="promo__inner">
+                <h4 class="promo__title section-title wow fadeIn" data-wow-offset="200">Россия</h4>
+                <div class="promo__subtitle wow fadeIn" data-wow-offset="200" data-wow-delay=".3s">Более 15 туров для альпинистов всех уровней</div>
+                <div class="promo__table">
+                    <table class="table">
+                        <tr class="table__header wow fadeIn" data-wow-offset="200" data-wow-delay=".35s">
+                            <th scope="col">Вершина</th>
+                            <th scope="col">Высота</th>
+                            <th scope="col">Уровень</th>
+                            <th scope="col">Стоимость</th>
+                        </tr>
+                        <tr class="table__row wow fadeIn" data-wow-offset="200" data-wow-delay=".4s">
+                            <td>Эльбрус</td>
+                            <td>5642 м</td>
+                            <td>Средний</td>
+                            <td>от 25000&#8381;</td>
+                        </tr>
+                        <tr class="table__row wow fadeIn" data-wow-offset="200" data-wow-delay=".45s">
+                            <td>Казбек</td>
+                            <td>5033 м</td>
+                            <td>Сложный </td>
+                            <td>от 30000&#8381;</td>
+                        </tr>
+                        <tr class="table__row wow fadeIn" data-wow-offset="200" data-wow-delay=".5s">
+                            <td>Белуха</td>
+                            <td>4506 м</td>
+                            <td>Простой</td>
+                            <td>от 20000&#8381;</td>
+                        </tr>
+                        <tr class="table__row wow fadeIn" data-wow-offset="200" data-wow-delay=".55s">
+                            <td>Дыхтау</td>
+                            <td>5204 м</td>
+                            <td>Сложный</td>
+                            <td>от 40000&#8381;</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="promo__info wow fadeIn" data-wow-offset="150" data-wow-delay=".5s">
+                    <a href="#" class="btn">Смотреть все</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog section" id="blog">
+        <div class="container">
+            <div class="blog__inner">
+                <h4 class="blog__title section-title wow fadeIn" data-wow-offset="200">Блог</h4>
+                <div class="blog__content">
+
+                    <div class="blog-articles">
+                        <ul class="blog-articles__list">
+                            <li class="blog-articles__item wow fadeIn" data-wow-offset="200" data-wow-delay=".1s">
+                                <div class="blog-articles__date date">15 января, 2020</div>
+                                <a class="blog-articles__link" href="#">
+                                    Как подготовиться к первому восхождению на вершину
+                                </a>
+                            </li>
+                            <li class="blog-articles__item wow fadeIn" data-wow-offset="200" data-wow-delay=".15s">
+                                <div class="blog-articles__date date">10 января, 2020</div>
+                                <a class="blog-articles__link" href="#">
+                                    Фестиваль Alpika Freeski Аlpindustria Fest Красная Поляна 13-16 февраля
+                                </a>
+                            </li>
+                            <li class="blog-articles__item wow fadeIn" data-wow-offset="200" data-wow-delay=".2s">
+                                <div class="blog-articles__date date">20 декабря, 2019</div>
+                                <a class="blog-articles__link" href="#">
+                                    Особенности альпинизма на Камчатке. Все о Ключевой Сопке
+                                </a>
+                            </li>
+                            <li class="blog-articles__item wow fadeIn" data-wow-offset="200" data-wow-delay=".25s">
+                                <div class="blog-articles__date date">15 декабря, 2019</div>
+                                <a class="blog-articles__link" href="#">
+                                    Что происходит с человеком на высоте более 3000 метров?
+                                </a>
+                            </li>
+                            <li class="blog-articles__item wow fadeIn" data-wow-offset="200" data-wow-delay=".3s">
+                                <div class="blog-articles__date date">15 декабря, 2019</div>
+                                <a class="blog-articles__link" href="#">
+                                    Что происходит с человеком на высоте более 3000 метров?
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="blog-articles__info wow fadeIn" data-wow-offset="200" data-wow-delay=".35s">
+                            <a class="btn-more" href="#">Читать все новости</a>
+                        </div>
+                    </div>
+                    <article class="blog-article">
+                        <picture class="wow fadeIn" data-wow-offset="200" data-wow-delay=".1s">
+                            <source type="image/webp" srcset="images/blog-article.webp">
+                            <img class="blog-article__img" src="images/blog-article.jpg" alt="Artikles image">
+                        </picture>
+                        <div class="blog-article__date date wow fadeIn" data-wow-offset="200" data-wow-delay=".15s"">15 января, 2020</div>
+                        <h5 class="blog-article__title wow fadeIn" data-wow-offset="200" data-wow-delay=".2s"">
+                            Как подготовиться к первому восхождению на вершину
+                        </h5>
+                        <div class="blog-article__text">
+                            <p class="wow fadeIn" data-wow-offset="200" data-wow-delay=".25s">
+                                Перед тем, как отправиться на покорение вершины горы, нужно не только привести
+                                в порядок свою физическую форму, но и тренировать выносливость, дыхательную
+                                и сердечно-сосудистую системы. Именно на них приходится максимальная нагрузка
+                                на высоте. Поэтому из-за недостаточной подготовки вы можете сойти на полпути.
+                                Чтобы этого не случилось, занимайтесь плаванием, бегом, велосипедом
+                                и кардиотренировками.
+                            </p>
+                            <p class="wow fadeIn" data-wow-offset="200" data-wow-delay=".35s">
+                                Как должны проходить тренировки? В первую очередь, тренировки должны проходить
+                                постоянно, эффективно и интенсивно. Кроме того, нагрузка постепенно должна
+                                увеличиваться. В случае с бегом обязательно делать это с учетом пульса. Грамотно
+                                спланированный бег позволит не только сбросить вес, но и укрепит сердечную мышцу.
+                                При беге с высоким пульсом вы позволите организму привыкнуть к недостатку
+                                кислорода — то, с чем обязательно встретитесь в горах. Для укрепления физической
+                                подготовки и повышения выносливости также бегайте в горку или в быстром темпе
+                                поднимайтесь по лестницам. И не забудьте отдохнуть за неделю до путешествия!
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feedback" id="feedback">
+        <div class="container">
+            <div class="feedback__inner">
+                <div class="feedback__title section-title wow fadeIn" data-wow-offset="200" data-wow-delay=".1s">Нужна помощь с выбором тура?</div>
+                <div class="feedback__subtitle wow fadeIn" data-wow-offset="200" data-wow-delay=".2s">
+                    Заполните форму, наш менеджер свяжется с вами в ближайшее время и подберет подходящий тур
+                </div>
+                <form class="feedback-form" name="feedback-form" autocomplete="on" method="POST">
+                    <input class="feedback-form__row feedback-form__name wow fadeIn" data-wow-offset="200" data-wow-delay=".25s" placeholder="Имя" type="text" name="name" required>
+                    <input class="feedback-form__row feedback-form__phone wow fadeIn" data-wow-offset="200" data-wow-delay=".3s" placeholder="Телефон" type="tel" name="phone"
+                    maxlength="13" required>
+                    <input class="feedback-form__row feedback-form__email wow fadeIn" data-wow-offset="200" data-wow-delay=".35s" placeholder="E-mail" type="email" name="email"
+                    maxlength="50" multiple required>
+                    <button class="btn-send btn-more wow fadeIn" data-wow-offset="200" data-wow-delay=".4s" type="submit">Отправить</button>
+                </form>
+                <div class="feedback__discr wow fadeIn" data-wow-offset="200" data-wow-delay=".45s">
+                    Нажимая кнопку, вы соглашаетесь с условиями обработки персональных данных
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts section" id="contacts">
+        <div class="container">
+            <div class="contacts__inner">
+                <div class="map wow fadeIn" data-wow-offset="200" data-wow-delay=".3s"">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.5962120294969!2d30.322813663550797!3d59.93916139529303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1588524211824!5m2!1sru!2sru" width="600" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <address class="contacts__address">
+                    <h4 class="section-title contacts__title wow fadeIn" data-wow-offset="200" data-wow-delay=".1s">Контакты</h4>
+                    <ul class="contacts__list">
+                        <li class="contacts__item wow fadeIn" data-wow-offset="200" data-wow-delay=".15s">
+                            <div class="contacts__name">Адрес:</div>
+                            <div class="contacts__info">Санкт-Петербург, ул. Большая Конюшенная, 19</div>
+                        </li>
+                        <li class="contacts__item wow fadeIn" data-wow-offset="200" data-wow-delay=".2s">
+                            <div class="contacts__name">Телефон:</div>
+                            <div class="contacts__info">8 (800) 777-33-25</div>
+                        </li>
+                        <li class="contacts__item wow fadeIn" data-wow-offset="200" data-wow-delay=".25s">
+                            <div class="contacts__name">E-mail:</div>
+                            <div class="contacts__info">info@mountain.ru</div>
+                        </li>
+                        <li class="contacts__item wow fadeIn" data-wow-offset="200" data-wow-delay=".3s">
+                            <div class="contacts__name">Социальные сети:</div>
+                            <div class="contacts__info">
+                                <a class="social social-fb" href="#"></a>
+                                <a class="social social-inst" href="#"></a>
+                                <a class="social social-tw" href="#"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__info wow fadeIn" data-wow-offset="50" data-wow-delay=".35s">
+                    Maroon
+                    &#169;
+                    2020 Все права защищены
+                </div>
+                <div class="nav__logo wow fadeIn" data-wow-offset="50" data-wow-delay=".3s">
+                    <a href="#header" class="logo">MOUNTAIN</a>
+                </div>
+                <div class="footer__info wow fadeIn" data-wow-offset="50" data-wow-delay=".35s">
+                    Политика конфиденциальности
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>    
 </body>
 </html>
