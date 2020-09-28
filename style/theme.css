@@ -297,14 +297,14 @@ hr {
 }
 
 .bg-skills h2 {
-    margin-top: 0;
     color: #777;
     font-weight: bold;
+    margin-top: 14px;
 }
 
 .bg-skills p {
     color: #777;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 32px;
     margin-top: 14px;
 }
@@ -312,7 +312,7 @@ hr {
 .skills-block {
   border-radius: 30px;
   background-color: rgba(242, 242, 242, .75);;
-  padding: 20px;
+  padding: 10px;
 }
 
 
