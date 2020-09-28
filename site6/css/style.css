@@ -1,0 +1,206 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 34px;
+    color: rgb(117, 53, 8);
+    background-image: url('../images/bg.svg');
+}
+
+.container {
+    max-width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(250, 235, 215, .7);
+    margin-top: 45px;
+    border-radius: 15px;
+    padding: 15px;
+    transition: all 1s;
+}
+
+.header:hover {
+    background-color: rgba(248, 195, 125, 0.657);
+    color: rgb(70, 32, 5);
+}
+
+.header__title {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header__time {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.main {
+    background-color: rgba(250, 235, 215, .7);
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 15px;
+    transition: all .7s;
+}
+
+.main:hover {
+    background-color: rgba(248, 195, 125, 0.657);
+    color: rgb(70, 32, 5);
+}
+
+.main__title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.main__link {
+    color: rgb(117, 53, 8);
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.main__link:hover {
+    color: rgb(70, 32, 5);
+    text-decoration: underline;
+}
+
+.main__descr {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.solution {
+    margin-top: 10px;
+}
+
+.solution__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/**/
+.tamagocchi__btn {
+    background-color: #d0e1a9;
+}
+.tamagocchi__btn:hover,
+.tamagocchi__btn:focus {
+    background-color: #f1eccb;
+    color: rgb(138, 199, 16);
+}
+.tamagocchi_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(../images/tamagocchi-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    min-height: 420px;
+}
+.tamagocchi__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 370px;
+    min-width: 240px;
+    margin: 10px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid green;
+    border-radius: 7px;
+    padding: 0 5px 5px;
+}
+.tamagocchi__health {
+    margin: 0 auto;
+    width: 80%;
+    height: 20px;
+    background: linear-gradient(to right,#008000 20%, #ff0000ed 20%);
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(71, 31, 51);
+    line-height: 18px;
+}
+
+/**/
+
+
+.btn {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    font: inherit;
+    font-weight: 700;
+    padding: 5px;
+    outline: none;
+    border: 1px solid rgb(70, 32, 5);
+    border-radius: 7px;
+    /*background-color: #ffffff;*/
+    transition: all .2s;
+}
+
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px 0 3px rgba(167, 166, 166, 0.5);
+}
+
+.btn:hover,
+.btn:focus {
+    /*background-color: rgb(70, 32, .3);*/
+    /*color: rgba(250, 235, 215, .9); */
+}
+
+.footer {
+    background-color: rgba(250, 235, 215, .7);
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 15px;
+    transition: all 1s;
+}
+
+.footer:hover {
+    background-color: rgba(248, 195, 125, 0.657);
+    color: rgb(70, 32, 5);
+}
+
+.footer__author {
+    font-style: italic;
+    text-align: center;
+    font-weight: 600;
+}
+
+@media (max-width: 830px) {
+    body {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagochi</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <main class="main animate__animated animate__fadeInRight animate__delay-1s">
+            <h3 class="main__title">
+                Description:
+            </h3>
+            <p class="main__descr">
+                <ul class="solution__list">
+                    <li class="solution__item">
+                        1. The button allows you to create up to three tamagochi.<br>
+                        2. Tamagochi has a health condition. Health decreases over time.
+                        If health is zero, the tamagochi dies.<br>
+                        3. There are a button that, when pressed, improves health..
+                    </li>
+                </ul>
+            </p>
+            <p class="main__solution">
+                <div class="solution">
+                    <div class="solution__container">                        
+                        <button class="btn tamagocchi__btn" onclick="createTomagocchi()">Create a new Tamagochi!</button>
+                        <div class="tamagocchi_container">
+                        </div>
+                    </div>
+                </div> 
+            </p>
+        </main>
+        <footer class="footer animate__animated animate__fadeInUp animate__delay-1s">
+            <address class="footer__author">
+                Solution author: Ekaterina Shpigel
+            </address>
+        </footer>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
